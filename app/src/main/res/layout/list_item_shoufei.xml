@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/shoufei_table_border_color" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="?attr/shoufei_table_border_color" >
+
+            <LinearLayout
+                android:id="@+id/totalSelectViewLayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:background="#FFFFFF"
+                android:orientation="vertical"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="4dp"
+                android:weightSum="7" >
+
+                <!-- 姓名&&单号: -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/shoufei_nameandNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Elec Bill of Steven Jobs/33444222222"
+                        android:textSize="16sp" />
+                </LinearLayout>
+                <!-- 用户地址: -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingTop="1dp"
+                  >
+
+                    <TextView
+                        android:id="@+id/shoufei_addressTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shoufeidetail_tv_yonghudizhi" />
+
+                    <TextView
+                        android:id="@+id/shoufei_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                </LinearLayout>
+                <!-- 联系电话&&电力公司: -->
+
+
+                    <LinearLayout
+                           android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingTop="1dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/shoufei_phoneTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/shoufeidetail_tv_lianxidianhua" />
+
+                        <TextView
+                            android:id="@+id/shoufei_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                          android:paddingTop="1dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/shoufei_elecdComplanyTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/shoufeidetail_tv_dianligongsi" />
+
+                        <TextView
+                            android:id="@+id/shoufei_elecdComplany"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                <!-- 电费月份&&账单金额: -->
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                           android:paddingTop="1dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/shoufei_dianfeiyuefenTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/shoufeidetail_tv_dianfeiyuefen" />
+
+                        <TextView
+                            android:id="@+id/shoufei_dianfeiyuefen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                         android:paddingTop="1dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/shoufei_shoudianjineTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/shoufeidetail_tv_zhangdanjine" />
+
+                        <TextView
+                            android:id="@+id/shoufei_shoudianjine"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/lightblue" />
+                    </LinearLayout>
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <View android:layout_width="match_parent"
+              android:layout_height="?attr/listview_divide_height"
+              android:background="?attr/listview_divide_color"
+                />
+
+        <Button
+                android:id="@+id/shortCutKey_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/buttonFunctionDetailStyle1Port"
+                android:background="?attr/button_function_noborder_background_port"
+                android:text="@string/shoudianxiangqing_btn_sf" />
+    </LinearLayout>
+
+  
+</LinearLayout>

@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/main_frame_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:orientation="horizontal"
+            android:weightSum="6"
+        android:layout_weight="0">
+
+        <AutoCompleteTextView
+            android:id="@+id/inputCond"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/border_shape_thin"
+            android:ems="10"
+            android:hint="@string/main_edittext_input_hints"
+            android:inputType="number"
+            android:maxLength="19"
+            android:singleLine="true"
+            android:textSize="24sp"
+            android:textStyle="bold"
+                android:layout_weight="4">
+
+            <requestFocus />
+        </AutoCompleteTextView>
+        <ImageButton
+                android:id="@+id/btn_read"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/scancard"
+                android:layout_weight="1"/>
+        <ImageButton
+                android:id="@+id/btn_scan"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/scanbtn"
+                android:layout_weight="1"/>
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/input_model123"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:layout_marginTop="10dp" 
+        android:layout_weight="4.5"
+        android:weightSum="3"
+        android:visibility="visible"
+        >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/button1"
+                style="@style/buttonNumberStylePort"
+                android:background="?attr/button_number_background_port"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/buttonNumberStylePort"
+                android:layout_marginLeft="5dp"
+                android:background="?attr/button_number_background_port"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/buttonNumberStylePort"
+                android:layout_marginLeft="5dp"
+                android:background="?attr/button_number_background_port"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/button4"
+                style="@style/buttonNumberStylePort"
+                android:layout_marginLeft="5dp"
+                android:background="?attr/button_number_background_port"
+                android:text="4" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/button5"
+                style="@style/buttonNumberStylePort"
+                android:background="?attr/button_number_background_port"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/button6"
+                style="@style/buttonNumberStylePort"
+                android:layout_marginLeft="5dp"
+                android:background="?attr/button_number_background_port"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/button7"
+                style="@style/buttonNumberStylePort"
+                android:layout_marginLeft="5dp"
+                android:background="?attr/button_number_background_port"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/button8"
+                style="@style/buttonNumberStylePort"
+                android:layout_marginLeft="5dp"
+                android:background="?attr/button_number_background_port"
+                android:text="8" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/switchtoABC"
+                style="@style/buttonClearBackStyle"
+                android:background="?attr/button_clear_back_background"
+                android:text="ABC"
+                android:padding="0dp"/>
+
+            <Button
+                android:id="@+id/button9"
+                style="@style/buttonNumberStylePort"
+                android:layout_marginLeft="5dp"
+                android:background="?attr/button_number_background_port"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/button0"
+                style="@style/buttonNumberStylePort"
+                android:layout_marginLeft="5dp"
+                android:background="?attr/button_number_background_port"
+                android:text="0" />
+
+            <LinearLayout
+                android:id="@+id/buttonBack123"
+                style="@style/buttonClearBackStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="?attr/button_clear_back_background"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:padding="0dp" >
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/back_del"/>
+                </LinearLayout>
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:id="@+id/input_modelABC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:layout_marginTop="20dp"
+        android:layout_weight="4.5"
+        android:weightSum="3"
+        android:visibility="gone">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/buttonq"
+                style="@style/buttonNumberStylePortABC"
+                android:background="?attr/button_number_background_port"
+                android:text="Q" />
+
+            <Button
+                android:id="@+id/buttonw"
+                style="@style/buttonNumberStylePortABC"
+                android:layout_marginLeft="1dp"
+                android:background="?attr/button_number_background_port"
+                android:text="W" />
+
+            <Button
+                android:id="@+id/buttone"
+                style="@style/buttonNumberStylePortABC"
+                android:layout_marginLeft="1dp"
+                android:background="?attr/button_number_background_port"
+                android:text="E" />
+ <Button
+                android:id="@+id/buttonr"
+                style="@style/buttonNumberStylePortABC"
+                android:layout_marginLeft="1dp"
+                android:background="?attr/button_number_background_port"
+                android:text="R" />
+ <Button
+                android:id="@+id/buttont"
+                style="@style/buttonNumberStylePortABC"
+                android:layout_marginLeft="1dp"
+                android:background="?attr/button_number_background_port"
+                android:text="T" />
+ <Button
+                android:id="@+id/buttony"
+                style="@style/buttonNumberStylePortABC"
+                android:layout_marginLeft="1dp"
+                android:background="?attr/button_number_background_port"
+                android:text="Y" />
+ <Button
+                android:id="@+id/buttonu"
+                style="@style/buttonNumberStylePortABC"
+                android:layout_marginLeft="1dp"
+                android:background="?attr/button_number_background_port"
+                android:text="U" />
+ <Button
+                android:id="@+id/buttoni"
+                style="@style/buttonNumberStylePortABC"
+                android:layout_marginLeft="1dp"
+                android:background="?attr/button_number_background_port"
+                android:text="I" />
+ <Button
+                android:id="@+id/buttono"
+                style="@style/buttonNumberStylePortABC"
+                android:layout_marginLeft="1dp"
+                android:background="?attr/button_number_background_port"
+                android:text="O" />
+ <Button
+                android:id="@+id/buttonp"
+                style="@style/buttonNumberStylePortABC"
+                android:layout_marginLeft="1dp"
+                android:background="?attr/button_number_background_port"
+                android:text="P" />
+
+
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/buttona"
+                style="@style/buttonNumberStylePortABC"
+                android:background="?attr/button_number_background_port"
+                android:text="A" />
+
+            <Button
+                android:id="@+id/buttons"
+                style="@style/buttonNumberStylePortABC"
+                android:layout_marginLeft="1dp"
+                android:background="?attr/button_number_background_port"
+                android:text="S" />
+
+            <Button
+                android:id="@+id/buttond"
+                style="@style/buttonNumberStylePortABC"
+                android:layout_marginLeft="1dp"
+                android:background="?attr/button_number_background_port"
+                android:text="D" />
+            <Button
+                android:id="@+id/buttonf"
+                style="@style/buttonNumberStylePortABC"
+                android:layout_marginLeft="1dp"
+                android:background="?attr/button_number_background_port"
+                android:text="f" />
+            <Button
+                android:id="@+id/buttong"
+                style="@style/buttonNumberStylePortABC"
+                android:layout_marginLeft="1dp"
+                android:background="?attr/button_number_background_port"
+                android:text="G" />
+            <Button
+                android:id="@+id/buttonh"
+                style="@style/buttonNumberStylePortABC"
+                android:layout_marginLeft="1dp"
+                android:background="?attr/button_number_background_port"
+                android:text="H" />
+            <Button
+                android:id="@+id/buttonj"
+                style="@style/buttonNumberStylePortABC"
+                android:layout_marginLeft="1dp"
+                android:background="?attr/button_number_background_port"
+                android:text="J" />
+            <Button
+                android:id="@+id/buttonk"
+                style="@style/buttonNumberStylePortABC"
+                android:layout_marginLeft="1dp"
+                android:background="?attr/button_number_background_port"
+                android:text="K" />
+            <Button
+                android:id="@+id/buttonl"
+                style="@style/buttonNumberStylePortABC"
+                android:layout_marginLeft="1dp"
+                android:background="?attr/button_number_background_port"
+                android:text="L" />
+
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/switchto123"
+                style="@style/buttonClearBackStyle"
+                android:background="?attr/button_clear_back_background"
+                android:text="123"
+                android:padding="0dp"/>
+
+            <Button
+                android:id="@+id/buttonz"
+                style="@style/buttonNumberStylePortABC"
+                android:layout_marginLeft="1dp"
+                android:background="?attr/button_number_background_port"
+                android:text="Z" />
+ <Button
+                android:id="@+id/buttonx"
+                style="@style/buttonNumberStylePortABC"
+                android:layout_marginLeft="1dp"
+                android:background="?attr/button_number_background_port"
+                android:text="X" />
+
+            <Button
+                android:id="@+id/buttonc"
+                style="@style/buttonNumberStylePortABC"
+                android:layout_marginLeft="1dp"
+                android:background="?attr/button_number_background_port"
+                android:text="C" />
+ <Button
+                android:id="@+id/buttonv"
+                style="@style/buttonNumberStylePortABC"
+                android:layout_marginLeft="1dp"
+                android:background="?attr/button_number_background_port"
+                android:text="V" />
+ <Button
+                android:id="@+id/buttonb"
+                style="@style/buttonNumberStylePortABC"
+                android:layout_marginLeft="1dp"
+                android:background="?attr/button_number_background_port"
+                android:text="B" />
+ <Button
+                android:id="@+id/buttonn"
+                style="@style/buttonNumberStylePortABC"
+                android:layout_marginLeft="1dp"
+                android:background="?attr/button_number_background_port"
+                android:text="N" />
+ <Button
+                android:id="@+id/buttonm"
+                style="@style/buttonNumberStylePortABC"
+                android:layout_marginLeft="1dp"
+                android:background="?attr/button_number_background_port"
+                android:text="M" />
+
+            <LinearLayout
+                android:id="@+id/buttonBackABC"
+                style="@style/buttonClearBackStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/button_clear_back_background"
+                android:layout_marginLeft="1dp"
+                android:gravity="center"
+                android:padding="0dp" >
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/back_del"/>
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" 
+        android:layout_weight="1.5">
+
+        <Button
+            android:id="@+id/buttonByUser"
+            style="@style/buttonFunctionStylePortBig"
+            android:layout_marginRight="3dp"
+            android:padding="0dp"
+            android:background="?attr/button_function_background_port"
+            android:text="@string/main_button_anyonghu" />
+
+        <Button
+            android:id="@+id/buttonByElecWatch"
+            style="@style/buttonFunctionStylePortBig"
+            android:layout_marginLeft="5dp"
+            android:padding="0dp"
+            android:background="?attr/button_function_background_port"
+            android:text="@string/main_button_andianbiao" />
+    </LinearLayout>
+
+</LinearLayout>

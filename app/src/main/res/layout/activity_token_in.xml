@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+    
+         <LinearLayout
+            android:id="@+id/titleLay"
+	        android:layout_width="fill_parent"
+	        android:layout_height="50dp"
+	        android:background="@color/gainsboro"
+	        android:orientation="horizontal">
+	        <TextView
+		        android:id="@+id/textView1"
+		        android:layout_width="fill_parent"
+		        android:layout_height="50dp"
+		        android:gravity="center_vertical"
+		        android:background="@color/gainsboro"
+		        android:textSize="20dp"
+		        android:text="@string/tranin_dialog_back" />
+	     </LinearLayout>
+        
+          <ScrollView 
+              android:id="@+id/scroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+		        <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical"
+                    >
+                      <LinearLayout 
+                         android:layout_width="match_parent"
+                         android:layout_height="35dp"
+                          android:gravity="center_horizontal">
+                      <com.myDialog.EditTextWithDel
+                         android:id="@+id/token"
+                         android:layout_width="250dp"
+                         android:layout_height="35dp"
+				       	android:background="@drawable/background_edittext_rope"
+				       	android:singleLine="true"
+				       	android:inputType="number"
+				       	android:maxLength="20"
+				       	android:hint="@string/tranin_dialog_hint1"
+                         />
+                     </LinearLayout>
+                     
+                  <Button 
+			        android:id="@+id/query"
+			        android:layout_width="250dp"
+			        android:layout_height="50dp"
+			        android:layout_gravity="center_horizontal"
+			        android:layout_marginTop="20dp"
+			        style="@style/buttonCheckStyle"
+			        android:background="?attr/button_function_background_port"
+			        android:text="@string/tranin_btn_qry"/>
+                  
+                  <TableLayout 
+                    android:id="@+id/table_inf"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:orientation="vertical"
+		            android:layout_marginTop="20dp"
+		            android:background="#CFCFCF"
+		            android:visibility="gone"
+		            >
+		            <TableRow 
+		                android:layout_width="match_parent"
+		                android:layout_height="40dp"
+		                android:layout_marginLeft="20dp">
+		                <TextView 
+		                    android:layout_width="200dp"
+		                    android:textSize="18dp"
+		                    android:gravity="center_vertical|left"
+		                    android:text="@string/tranin_suc_amt"/>
+		                
+		                 <TextView 
+		                     android:id="@+id/transfer_amt"
+		                    android:layout_width="200dp"
+		                    android:layout_marginLeft="10dp"
+		                    android:textSize="18dp"/>
+		                
+		            </TableRow>
+		            
+		            <TableRow 
+		                android:layout_width="match_parent"
+		                android:layout_height="40dp"
+		                android:layout_marginLeft="20dp"
+		                android:layout_marginTop="15dp">
+		                <TextView 
+		                    android:layout_width="200dp"
+		                    android:textSize="18dp"
+		                    android:gravity="center_vertical|left"
+		                    android:text="@string/tran_hint_fee"/>
+		                
+		                 <TextView 
+		                    android:id="@+id/fee"
+		                    android:layout_width="200dp"
+		                    android:layout_marginLeft="10dp"
+		                    android:textSize="18dp"/>
+		                
+		            </TableRow>
+		            
+		            <TableRow 
+		                android:layout_width="match_parent"
+		                android:layout_height="40dp"
+		                android:layout_marginLeft="20dp"
+		                android:layout_marginTop="15dp">
+		                <TextView 
+		                    android:layout_width="200dp"
+		                    android:textSize="18dp"
+		                    android:gravity="center_vertical|left"
+		                    android:text="@string/tran_hint_phone"/>
+		                
+		                 <TextView 
+		                    android:id="@+id/mobile_number"
+		                    android:layout_width="200dp"
+		                    android:layout_marginLeft="10dp"
+		                    android:textSize="18dp"/>
+		                
+		            </TableRow>
+		            
+		            <TableRow 
+		                android:layout_width="match_parent"
+		                android:layout_height="40dp"
+		                android:layout_marginLeft="20dp"
+		                android:layout_marginTop="15dp">
+		                <TextView 
+		                    android:layout_width="200dp"
+		                    android:textSize="18dp"
+		                    android:gravity="center_vertical|left"
+		                    android:text="@string/tran_in_amt"/>
+		                
+		                 <TextView 
+		                    android:id="@+id/in_amt"
+		                    android:layout_width="200dp"
+		                    android:layout_marginLeft="10dp"
+		                    android:textSize="18dp"/>
+		                
+		            </TableRow>
+		        </TableLayout>
+		        
+		        <LinearLayout 
+		            android:id="@+id/lin_pin"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="15dp"
+                     android:gravity="center_horizontal"
+                      android:visibility="gone"
+                      android:orientation="vertical">
+                     
+                     <EditText 
+                         android:id="@+id/pincode"
+                         android:layout_width="250dp"
+                         android:layout_height="35dp"
+				       	android:background="@drawable/background_edittext_rope"
+				       	android:inputType="number"
+				       	android:maxLength="6"
+				       	android:hint="@string/tranin_dialog_hint2"
+                         />
+                     
+                       <Button 
+				        android:id="@+id/complete"
+				        android:layout_width="250dp"
+				        android:layout_height="50dp"
+				        android:layout_gravity="center_horizontal"
+				        android:layout_marginTop="20dp"
+				        style="@style/buttonCheckStyle"
+				        android:background="?attr/button_function_background_port"
+				        android:text="@string/tranin_dialog_pbtn"/>
+              </LinearLayout>
+                     
+                
+                    
+                </LinearLayout>
+		        
+		   </ScrollView>
+		   
+          
+           <TableLayout 
+                    android:id="@+id/table_success"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:orientation="vertical"
+		            android:layout_marginTop="50dp"
+		            android:shrinkColumns="1,2,3,4,5"
+		            android:visibility="gone"
+		            >
+		        
+                <TableRow 
+		                android:layout_width="match_parent"
+		                android:layout_height="40dp"
+		                 android:gravity="center"
+		                android:layout_marginLeft="20dp">
+		                <TextView 
+		                    android:layout_width="match_parent"
+		                    android:textSize="20dp"
+		                    android:textStyle="bold"
+		                    android:text="@string/tranin_suc_msg"/>
+		                
+		            </TableRow>
+		            
+		            <TableRow 
+		                android:layout_width="match_parent"
+		                android:layout_height="40dp"
+		                android:layout_marginTop="20dp"
+		                 android:layout_marginRight="10dp"
+		                android:layout_marginLeft="20dp">
+		                <TextView 
+		                    android:layout_width="100dp"
+		                    android:textSize="18dp"
+		                    android:gravity="center_vertical|left"
+		                    android:textColor="@color/grey"
+		                    android:text="@string/tran_in_amt"/>
+		                
+		                 <TextView 
+		                     android:id="@+id/transfer_amt_suc"
+		                    android:layout_width="200dp"
+		                    android:textSize="18dp"/>
+		                
+		            </TableRow>
+		            
+		            <TableRow 
+		                android:layout_width="match_parent"
+		                android:layout_height="40dp"
+		                android:layout_marginLeft="20dp"
+		                 android:layout_marginRight="10dp"
+		                android:layout_marginTop="15dp">
+		                <TextView 
+		                    android:layout_width="100dp"
+		                    android:textSize="18dp"
+		                    android:gravity="center_vertical|left"
+		                    android:textColor="@color/grey"
+		                    android:text="@string/tranin_suc_fee"/>
+		                
+		                 <TextView 
+		                    android:id="@+id/fee_suc"
+		                    android:layout_width="200dp"
+		                    android:textSize="18dp"/>
+		                
+		            </TableRow>
+		            
+		            <TableRow 
+		                android:layout_width="match_parent"
+		                android:layout_height="40dp"
+		                android:layout_marginLeft="20dp"
+		                 android:layout_marginRight="10dp"
+		                android:layout_marginTop="15dp">
+		                <TextView 
+		                    android:layout_width="100dp"
+		                    android:textSize="18dp"
+		                    android:gravity="center_vertical|left"
+		                    android:textColor="@color/grey"
+		                    android:text="@string/tranin_suc_commision"/>
+		                
+		                 <TextView 
+		                    android:id="@+id/commission_suc"
+		                    android:layout_width="200dp"
+		                    android:textSize="18dp"/>
+		                
+		            </TableRow>
+		            
+		            <TableRow 
+		                android:layout_width="match_parent"
+		                android:layout_height="40dp"
+		                android:layout_marginLeft="20dp"
+		                android:layout_marginTop="15dp">
+		                <TextView 
+		                    android:layout_width="100dp"
+		                    android:textSize="18dp"
+		                    android:gravity="center_vertical|left"
+		                    android:textColor="@color/grey"
+		                    android:text="@string/tranin_suc_balance"/>
+		                
+		                 <TextView 
+		                    android:id="@+id/balance_suc"
+		                    android:layout_width="200dp"
+		                    android:layout_marginRight="50dp"
+		                    android:singleLine="false"
+		                    android:textSize="18dp"/>
+		                
+		            </TableRow>
+		        </TableLayout>
+		        
+    </LinearLayout>
+
+
+</RelativeLayout>

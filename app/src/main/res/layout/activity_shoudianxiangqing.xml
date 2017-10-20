@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center|center_vertical"
+        android:background="?attr/main_title_color"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:enabled="true"
+            android:gravity="center"
+            android:text="@string/shoudianxiangqing_title"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:background="?attr/main_title_color"
+            android:gravity="right"
+            android:layout_marginRight="0dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/btnCloseActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:clickable="true"
+                android:gravity="right"
+                android:onClick="closeActivity"
+                android:src="?attr/dialogclose_background" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/shoudianxiangqing_nameandnumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="PrePay of Steven Jobs/33444222222"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <!-- 电表编号 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/shoudianxiangqing_dianbiaobianhaoTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="@string/shoufeidetail_tv_dianbiaobianhao" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/shoudianxiangqing_dianbiaobianhao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp" />
+                </LinearLayout>
+                <!-- 电力公司 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/shoudianxiangqing_elecdComplanyTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="@string/shoufeidetail_tv_dianligongsi" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/shoudianxiangqing_elecdComplany"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp" />
+                </LinearLayout>
+                <!-- 联系方式 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/shoudianxiangqing_lianxidianhuaTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="@string/shoufeidetail_tv_lianxidianhua" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/shoudianxiangqing_lianxidianhua"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp" />
+                </LinearLayout>
+
+                <!-- 用户地址 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/shoudianxiangqing_addressTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="@string/shoufeidetail_tv_yonghudizhi" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/shoudianxiangqing_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="?attr/main_frame_color"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/shoudianxiangqing_tv_cysdje"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#000000" />
+
+            <LinearLayout
+                android:id="@+id/Amtbuttons"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/btn500"
+                    style="@style/buttonNumberStylePort"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:background="?attr/button_number_background_port"
+                    android:text="500" />
+
+                <Button
+                    android:id="@+id/btn1000"
+                    style="@style/buttonNumberStylePort"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:background="?attr/button_number_background_port"
+                    android:text="1000" />
+
+                <Button
+                    android:id="@+id/btn1500"
+                    style="@style/buttonNumberStylePort"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:background="?attr/button_number_background_port"
+                    android:text="1500" />
+
+                <Button
+                    android:id="@+id/btn2000"
+                    style="@style/buttonNumberStylePort"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:background="?attr/button_number_background_port"
+                    android:text="2000" />
+
+                <Button
+                    android:id="@+id/btn2500"
+                    style="@style/buttonNumberStylePort"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:background="?attr/button_number_background_port"
+                    android:text="2500" />
+            </LinearLayout>
+
+
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#000000" />
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/et_zdsdje"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/border_shape_thin"
+                    android:ems="10"
+                    android:hint="@string/shoudianxiangqing_tv_je"
+                    android:singleLine="true"
+                    android:textSize="20sp" 
+                    android:inputType="numberDecimal">
+                </EditText>
+                
+                	</LinearLayout>
+              <LinearLayout 
+                  android:id="@+id/tokenPayLin"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:gravity="center"
+                  android:layout_marginTop="20dp"
+                  android:layout_marginBottom="20dp"
+                  android:layout_marginLeft="5dp"
+                  android:layout_marginRight="5dp"
+                  android:orientation="vertical">
+                  
+                  <EditText 
+                      android:id="@+id/TokenCode"
+                      android:layout_width="match_parent"
+                      android:layout_height="40dp"
+                      android:layout_marginTop="5dp"
+                      android:layout_marginLeft="5dp"
+                      android:layout_marginRight="5dp"
+                      android:background="@drawable/border_shape_thin"
+                      android:singleLine="true"
+                      android:maxLength="20"
+                      android:textSize="20sp"
+                      android:hint="@string/shoudianxiangqing_pay_token"
+                      android:inputType="number"
+                      />
+
+                 <!-- <EditText
+                      android:id="@+id/PinCode"
+                       android:layout_width="match_parent"
+                       android:layout_height="40dp"
+                      android:layout_marginLeft="5dp"
+                      android:layout_marginRight="5dp"
+                      android:background="@drawable/border_shape_thin"
+                      android:singleLine="true"
+                      android:maxLength="6"
+                      android:textSize="20sp"
+                      android:hint="@string/shoudianxiangqing_pay_pin"
+                      android:inputType="number"/>-->
+                  
+              </LinearLayout>
+
+	               
+	        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+				
+				<TextView
+                        android:id="@+id/spinner_paywayss"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/shoudianxiangqing_tv_zffs"
+                        android:textColor="#000000"
+                        android:paddingLeft="5dp" 
+                        android:textSize="18sp" />
+				
+				<Spinner
+		            android:id="@+id/spinner_payways"
+		            android:layout_width="wrap_content"
+		            android:layout_height="40dp"
+		            android:layout_gravity="center_vertical"
+		            android:layout_marginLeft="15dp"
+		            android:background="?attr/spinermenubackground_style"/>
+
+        	</LinearLayout>
+	        
+	        
+ 
+          <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/btn_qrsf"
+                    style="@style/buttonFunctionStylePort"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="?attr/button_function_background_port"
+                    android:text="@string/shoufeixiangqing_btn_querenshoufei" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

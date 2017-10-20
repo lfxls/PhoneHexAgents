@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+    
+       <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="center|center_vertical"
+        android:background="?attr/main_title_color"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:enabled="true"
+            android:gravity="center"
+            android:text="@string/dlg_goudianchenggong_title"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:background="?attr/main_title_color"
+            android:gravity="right"
+            android:layout_marginRight="0dp"
+            android:padding="0dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/btnGdcgCloseDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:clickable="true"
+                android:gravity="right"
+                android:src="?attr/dialogclose_background" />
+        </LinearLayout>
+    </LinearLayout>
+     
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/shoufeixiangqing_tv_zhifuzonge"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+            
+			<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/shoufeixiangqing_tv_goudianliang"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+			
+			<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/shoufeixiangqing_tv_goudianjine"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/shoufeixiangqing_tv_shouxufei"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+           
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+             <TextView
+                android:id="@+id/zhifujine_Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="1000￥"
+                android:textColor="?attr/main_welcome_title_content_color"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/goudianliang_Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="10 KWH"
+                android:textColor="?attr/main_welcome_title_content_color"
+                android:textSize="18sp" />
+            
+            <TextView
+                android:id="@+id/goudianjine_Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="900￥"
+                android:textColor="?attr/main_welcome_title_content_color"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/shouxufei_Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="100￥"
+                android:textColor="?attr/main_welcome_title_content_color"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="60dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:background="@drawable/border_shape_yellow"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/dlg_goudianchenggong_token"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/token_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="1234 1234 1234 1234"
+            android:textColor="?attr/main_welcome_title_content_color"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:gravity="center" >
+        
+         <Button
+            android:id="@+id/btn_print_again"
+            style="@style/buttonFunctionStylePortBig"
+            android:layout_width="fill_parent"
+            android:padding="0dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:background="?attr/button_function_background_port"
+            android:text="@string/dlg_goudianchenggong_zcdy" />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+		
+        <Button
+            android:id="@+id/btn_bangka"
+            style="@style/buttonFunctionStylePortBig"
+            android:layout_width="150dp"
+            android:layout_gravity="center"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:background="?attr/button_function_background_port"
+            android:text="@string/dlg_goudianchenggong_bangka"
+            android:textSize="12dp" />
+        
+     	<Button
+            android:id="@+id/btn_send_sms"
+            style="@style/buttonFunctionStylePortBig"
+            android:layout_width="150dp"
+            android:layout_marginLeft="10dp"
+            android:padding="0dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:background="?attr/button_function_background_port"
+            android:text="@string/signup_base_channel4" 
+            android:textSize="12dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

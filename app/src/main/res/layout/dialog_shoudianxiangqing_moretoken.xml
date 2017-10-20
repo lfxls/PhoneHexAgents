@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border_shape_yellow"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+	<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/dlg_goudianchenggong_token"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+	<ScrollView 
+			android:id="@+id/scrollView" 
+			android:layout_width="fill_parent" 
+			android:layout_height="500px" 
+			android:layout_margin="20dp"
+			android:scrollbarStyle="outsideOverlay" 
+			android:background="#fff5a8" 
+			> 
+			<TextView 
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:textSize="20sp"
+			android:textColor="?attr/main_welcome_title_content_color"
+			android:text="1234 1234 1234 1234\n1234 1234 1234 1234\n1234 1234 1234 1234\n1234 1234 1234 1234"
+			android:id="@+id/more_token" 
+			/> 
+	</ScrollView>
+ </LinearLayout>

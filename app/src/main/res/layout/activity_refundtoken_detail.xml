@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        
+        <EditText 
+            android:id="@+id/refundToken"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:background="@drawable/background_edittext_rope"
+            android:singleLine="true"
+            android:maxLength="20"
+            android:inputType="number"
+            android:hint="@string/refund_token_hint"/>
+        
+         <Button 
+	        android:id="@+id/qryToken"
+	        android:layout_width="250dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="20dp"
+	        android:layout_gravity="center_horizontal"
+	        style="@style/buttonCheckStyle"
+	        android:background="?attr/button_function_background_port"
+	        android:text="@string/refund_token_query"/>  
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/layoutinf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+        
+       <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:orientation="vertical">
+	        <TextView 
+	            android:id="@+id/ordamt"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="20dp"
+	            android:text="TOKEN金额: 000 ZAR"/>
+	        <TextView 
+	            android:id="@+id/poweramt"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="20dp"
+	            android:layout_marginTop="5dp"
+	            android:text="TOKEN金额: 0000 ZAR"
+	           />
+	        <TextView 
+	            android:id="@+id/fee"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="20dp"
+	            android:layout_marginTop="5dp"
+	            android:text="TOKEN金额: 0000 ZAR"
+	           />
+	    </LinearLayout>
+        <EditText 
+            android:id="@+id/refundpin"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/background_edittext_rope"
+            android:singleLine="true"
+            android:maxLength="6"
+            android:inputType="number"
+            android:hint="@string/refund_pin_hint"/>
+        
+          <Button 
+	        android:id="@+id/confirm"
+	        android:layout_width="250dp"
+	        android:layout_height="40dp"
+	        android:layout_marginTop="20dp"
+	        android:layout_gravity="center_horizontal"
+	        style="@style/buttonCheckStyle"
+	        android:background="?attr/button_function_background_port"
+	        android:text="@string/refund_confirm"/>  
+        
+    </LinearLayout>
+    
+
+</LinearLayout>

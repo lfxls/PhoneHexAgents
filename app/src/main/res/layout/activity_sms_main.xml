@@ -1,0 +1,277 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="?attr/main_title_color"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/hexing_logo1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/main_title_hexing"
+            android:textColor="#FFFFFF"
+            android:textSize="20px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:id="@+id/zx_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="10px"
+                android:clickable="true"
+                android:gravity="right"
+                android:onClick="zx"
+                android:text="@string/main_title_zhuxiao"
+                android:textColor="#FFFFFF"
+                android:textSize="25px" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="?attr/welcome_style_port"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_welcome_huangyingnin"
+                android:textColor="?attr/main_welcome_title_text_color"
+                android:textSize="20px" />
+
+            <TextView
+                android:id="@+id/tv_user1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/main_welcome_title_content_color"
+                android:textSize="18px" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="?attr/welcome_divide_width"
+            android:layout_height="fill_parent"
+            android:background="#f8b948" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_welcome_jingrishoudian"
+                android:textColor="?attr/main_welcome_title_text_color"
+                android:textSize="20px" />
+
+            <TextView
+                android:id="@+id/tv_jinrishoudian1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/main_welcome_title_content_color"
+                android:textSize="18px" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="?attr/welcome_divide_width"
+            android:layout_height="fill_parent"
+            android:background="#f8b948" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_welcome_baozhengjinyue"
+                android:textColor="?attr/main_welcome_title_text_color"
+                android:textSize="20px" />
+
+            <TextView
+                android:id="@+id/tv_baozhengjinyue1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/main_welcome_title_content_color"
+                android:textSize="18px" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="?attr/main_border_style"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:text="@string/shoufeidetail_tv_dianbiaobianhao"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="?attr/main_border_style"
+            android:hint="211435550861"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="?attr/main_border_style"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:text="@string/shoufeidetail_tv_shoudianjine"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="?attr/main_border_style"
+            android:hint="2013.05"
+            android:singleLine="true" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/command"
+            style="@style/buttonFunctionStyle"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="?attr/button_login_background"
+            android:text="@string/shoufeidetail_btn_duanxinshoudian" />
+    </LinearLayout>
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">       
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="?attr/main_title_color"
+        android:gravity="left|center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_clock1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7px"
+            android:textColor="@color/white" />
+        
+        <ImageView
+            android:id="@+id/imageBattery1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7px" />
+
+        <ImageView
+            android:id="@+id/imageWifi1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7px"
+            android:src="@drawable/icon_wifi3"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imageSignal1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7px"
+            android:src="@drawable/icon_signal1" 
+            android:visibility="gone"/>
+        
+        <ImageView
+            android:id="@+id/imageEthernet1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7px"
+            android:src="@drawable/ethernet" 
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</LinearLayout>

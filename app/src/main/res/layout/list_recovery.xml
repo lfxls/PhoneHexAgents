@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:weightSum="7"
+            >
+
+        <TextView
+                android:id="@+id/tv1"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="12dp"
+                />
+
+        <TextView
+                android:id="@+id/tv2"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="12dp"
+                />
+
+        <TextView
+                android:id="@+id/tv3"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="12dp"
+                />
+
+        <TextView
+                android:id="@+id/tv4"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="12dp"
+                />
+
+        <TextView
+                android:id="@+id/tv5"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="12dp"
+                />
+
+        <TextView
+                android:id="@+id/tv6"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="12dp"
+                />
+
+        <TextView
+                android:id="@+id/tv7"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="12dp"
+                />
+
+    </TableRow>
+
+    <View android:layout_width="match_parent"
+          android:layout_height="?attr/listview_divide_height"
+          android:background="?attr/listview_divide_color"
+            />
+
+    <Button
+            style="@style/buttonFunctionDetailStyle1Port"
+            android:background="?attr/button_function_noborder_background_port"
+            android:id="@+id/btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="0dp"
+            />
+
+</LinearLayout>
+

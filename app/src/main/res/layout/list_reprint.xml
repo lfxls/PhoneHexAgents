@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:orientation="vertical"
+        >
+
+        <!-- 交易单号: -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shrinkColumns="0,1,2" >
+
+            <TableRow
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:weightSum="8">
+
+                <TextView
+                    android:id="@+id/tv11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/str_jiaoyidanhao" />
+
+                <TextView
+                    android:id="@+id/tv12"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    />
+
+                <TextView
+                    android:id="@+id/tv13"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/str_jiaofeijine" />
+
+                <TextView
+                    android:id="@+id/tv14"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    />
+            </TableRow>
+
+            <!-- 交易时间: -->
+
+            <TableRow
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:weightSum="8">
+
+                <TextView
+                    android:id="@+id/tv21"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/str_jiaoyishijian"
+                    />
+
+                <TextView
+                    android:id="@+id/tv22"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="3"
+                    />
+
+                <TextView
+                    android:id="@+id/tv23"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/str_yewuleixing"
+                    />
+
+                <TextView
+                    android:id="@+id/tv24"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="3"
+                    />
+
+                <!-- </LinearLayout> -->
+            </TableRow>
+            <!-- 电力公司: -->
+
+            <TableRow android:layout_marginLeft="10dp"
+                      android:layout_marginTop="5dp"
+                    android:weightSum="8">
+
+                <TextView
+                    android:id="@+id/tv31"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/str_dianligongsi"
+                    />
+
+                <TextView
+                    android:id="@+id/tv32"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="3"
+                    />
+
+                <TextView
+                    android:id="@+id/tv33"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/str_biaohao"
+                    />
+
+                <TextView
+                    android:id="@+id/tv34"
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_weight="3"
+                    />
+            </TableRow>
+        </TableLayout>
+
+        <!-- TOKEN: -->
+
+        <LinearLayout 
+            android:id="@+id/layout_token"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/tv41"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/str_token"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv42"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <!--<View android:layout_width="match_parent"-->
+              <!--android:layout_height="?attr/listview_divide_height"-->
+              <!--android:layout_margin="0dp"-->
+              <!--android:background="?attr/listview_divide_color"-->
+                <!--/>-->
+
+        <Button
+                android:id="@+id/btn"
+                android:layout_gravity="center"
+                style="@style/buttonFunctionDetailStyle1Port"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="?attr/button_function_noborder_background_port"
+                android:text="@string/pinzhengbuda_btn_bd" />
+
+        <!--<View android:layout_width="match_parent"-->
+              <!--android:layout_height="?attr/listview_divide_height"-->
+              <!--android:layout_margin="0dp"-->
+              <!--android:background="?attr/listview_divide_color"-->
+                <!--/>-->
+    </LinearLayout>
+
+
+</LinearLayout>

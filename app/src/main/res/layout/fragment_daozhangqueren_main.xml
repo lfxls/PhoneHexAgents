@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/main_frame_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+         <TextView
+             style="@style/tvTitleStyle"
+             android:textSize="15dp"
+             android:text="@string/main_daozhangqueren_textview_zaituchaxun" />
+
+        <Spinner           
+            android:id="@+id/spinner_daozhangqueren"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:prompt="@string/main_daozhangqueren_textview_zaituchaxun"
+            android:background="?attr/spinerbackground_style"
+            android:entries="@array/array_daozhuangzhuangtai"
+                />
+
+         <TextView
+             style="@style/tvTitleStyle"
+             android:textSize="15dp"
+             android:layout_marginLeft="10dp"
+             android:text="@string/main_daozhangqueren_textview_jiekuanrenyuan" />
+
+        <Spinner
+            android:id="@+id/spinner_jiekuangren"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:prompt="@string/main_daozhangqueren_textview_jiekuanrenyuan"
+            android:background="?attr/spinerbackground_style"
+            />
+
+    </LinearLayout>
+
+    <Button
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/btn_dzqr_quiry"
+            style="@style/buttonCheckStyle"
+            android:background="?attr/button_function_background_port"
+            android:text="@string/main_daozhangqueren_button_jiekuanrenyuan"
+            android:padding="0px"
+			android:layout_height="35dp"/>
+
+    <TableLayout
+        android:id="@+id/tb_dzqr_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="?attr/main_border_style"
+        android:padding="?attr/main_list_padding"
+        android:shrinkColumns="*"
+        android:stretchColumns="*" >
+
+        <!-- 表头 -->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="?attr/main_table_title_color" >
+
+            <TextView
+                style="?attr/main_shoufeimingxi_listtv_style"
+                android:layout_width="60dp"
+                android:text="@string/main_daozhangqueren_listtv_rijiebianhao" />
+
+            <TextView
+                style="?attr/main_shoufeimingxi_listtv_style"
+                android:layout_width="60dp"
+                android:text="@string/main_daozhangqueren_listtv_rijiejine" />
+
+            <TextView
+                style="?attr/main_shoufeimingxi_listtv_style"
+                android:layout_width="60dp"
+                android:text="@string/main_daozhangqueren_listtv_rijierenyuan" />
+
+            <TextView
+                style="?attr/main_shoufeimingxi_listtv_style"
+                android:layout_width="60dp"
+                android:text="@string/main_daozhangqueren_listtv_rijieriqi" />
+
+            <TextView
+                style="?attr/main_shoufeimingxi_listtv_style"
+                android:layout_width="60dp"
+                android:text="@string/main_daozhangqueren_listtv_daozhangzhuangtai" />
+
+            <TextView
+                style="?attr/main_shoufeimingxi_listtv_style"
+                android:layout_width="60dp"
+                android:text="@string/main_daozhangqueren_listtv_chuliren" />
+
+            <TextView
+                style="?attr/main_shoufeimingxi_listtv_style"
+                android:layout_width="60dp"
+                android:text="@string/main_daozhangqueren_listtv_chuliriqi" />
+
+        </TableRow>
+
+        <View android:layout_width="match_parent"
+            android:layout_height="?attr/listview_divide_height"
+            android:background="?attr/listview_divide_color"
+            />
+        
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+            <!-- 列表 -->
+            <com.common.powertech.widget.PullRefreshLayout
+                    android:id="@+id/pull_container"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#f5f5f5"
+                    android:scrollbars="vertical" >
+
+                <include
+                        android:id="@+id/action_view"
+                        layout="@layout/refresh_layout" />
+
+                <include
+                        android:id="@+id/tool_view"
+                        layout="@layout/tool_layout" />
+
+                <com.common.powertech.widget.PullUpListView
+                        android:id="@+id/listdaozhangquerenView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:cacheColorHint="@android:color/transparent"
+						android:divider="?attr/listview_divide_color"
+                        android:dividerHeight="?attr/listview_divide_height"
+                        android:focusable="false"
+                        android:paddingLeft="0dip"
+                        android:scrollbars="none" />
+
+            </com.common.powertech.widget.PullRefreshLayout>
+
+        </RelativeLayout>
+
+    </TableLayout>
+
+</LinearLayout>

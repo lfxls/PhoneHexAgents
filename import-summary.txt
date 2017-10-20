@@ -1,0 +1,71 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* GpSample(客显).iml
+* ic_launcher-web.png
+* proguard-project.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:18.0.0
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app\src\main\AndroidManifest.xml
+* libs\acssmc-1.1.2.jar => app\libs\acssmc-1.1.2.jar
+* libs\alipaySdk-20160825.jar => app\libs\alipaySdk-20160825.jar
+* libs\armeabi\libzbar.so => app\src\main\jniLibs\armeabi\libzbar.so
+* libs\axis.jar => app\libs\axis.jar
+* libs\core-3.2.1.jar => app\libs\core-3.2.1.jar
+* libs\gprintersdkv22.jar => app\libs\gprintersdkv22.jar
+* libs\HdxUtil.jar => app\libs\HdxUtil.jar
+* libs\jcc-bate-0.7.3.jar => app\libs\jcc-bate-0.7.3.jar
+* libs\ksoap2-android-assembly-3.0.0-jar-with-dependencies.jar => app\libs\ksoap2-android-assembly-3.0.0-jar-with-dependencies.jar
+* libs\libammsdk.jar => app\libs\libammsdk.jar
+* libs\orm.jar => app\libs\orm.jar
+* libs\ormdroid.jar => app\libs\ormdroid.jar
+* libs\SmartCardLib.jar => app\libs\SmartCardLib.jar
+* libs\sunjce_provider.jar => app\libs\sunjce_provider.jar
+* libs\telpo.jar => app\libs\telpo.jar
+* libs\telpo_api.jar => app\libs\telpo_api.jar
+* libs\xUtils-2.6.14.jar => app\libs\xUtils-2.6.14.jar
+* lint.xml => app\lint.xml
+* res\ => app\src\main\res\
+* src\ => app\src\main\java\
+* src\com\gprinter\aidl\GpService.aidl => app\src\main\aidl\com\gprinter\aidl\GpService.aidl
+* mm_title_back_focused.9.PNG => mm_title_back_focused.9.png
+* mm_title_back_normal.9.PNG => mm_title_back_normal.9.png
+* mm_title_back_pressed.9.PNG => mm_title_back_pressed.9.png
+* mmtitle_bg_alpha.9.PNG => mmtitle_bg_alpha.9.png
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

@@ -1,0 +1,847 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name"> Hexing electrical </string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="title_activity_login">LoginActivity</string>
+    
+     <!-- 注册 -->
+    <string name="signup_title">s‘inscrire</string>
+    <string name="signup_base">Information fondamentale</string>
+    <string name="signup_base_name">Nom d’agent:</string>
+    <string name="signup_base_type">Type d’agent:</string>
+    <string name="signup_base_around">Champ d’activit:</string>
+    <string name="signup_base_last">Ouvrir le rappel de :</string>
+    <string name="signup_base_lawman">Représentant légal:</string>
+    <string name="signup_base_channel">Canaux d’achat:</string>
+    <string name="signup_base_channel1">Internet</string>
+    <string name="signup_base_channel2">POS</string>
+    <string name="signup_base_channel3">Terminal</string>
+    <string name="signup_base_channel4">SMS</string>
+    <string name="signup_base_idtype">Type d’identit?:</string>
+    <string name="signup_base_id">Numéro d’identit?:</string>
+    <string name="signup_base_time">Période de validit?:</string>
+    <string name="signup_base_idfront">Face d’identit?:</string>
+    <string name="signup_base_idback">Verso d’identit?:</string>
+    <string name="signup_base_paytype"> aucun achat mot de passe de salaire:</string>
+    <string name="signup_base_nopass">aucun achat mot de passe de salaire</string>
+    <string name="signup_base_withpass">achat avec le mot de passe de paiement</string>
+    <string name="signup_base_paypass">Paiement Mot de passe:</string>
+    <string name="signup_base_confirmpaypass">confirmer le mot de passe de paiement:</string>
+    <string name="signup_base_tax">Période de validit?:</string>
+    <string name="signup_base_serve">Services de téléphonie:</string>
+    <string name="signup_base_contact">Information de contact de l’agent:</string>
+    <string name="signup_base_address">Adresse de bureau:</string>
+    <string name="signup_base_contactmen">Personne de contact:</string>
+    <string name="signup_base_tel">Portable:</string>
+    <string name="signup_base_mail">Email de contact:</string>
+    <string name="signup_base_mailnum">Code postal:</string>
+    <string name="signup_base_login">Information de connexion:</string>
+    <string name="signup_base_loginid">connexion:</string>
+    <string name="signup_base_loginpass">Mot de passe:</string>
+    <string name="signup_base_confirmpass">Confirmer mot de passe：</string>
+    <string name="signup_base_save">Envoyer</string>
+    <string name="signup_base_close">Fermer</string>
+    <string name="AGENT_TYPE_ITEM1">Entreprise</string>
+    <string name="AGENT_TYPE_ITEM2">Entreprise privée</string>
+    <string name="CRET_TYPE_ITEM1">Carte d’identité</string>
+    <string name="CRET_TYPE_ITEM2">Passeport</string>
+    <string name="CRET_TYPE_ITEM3">Certificat d’officier militaire</string>
+    <string name="CRET_TYPE_ITEM4">Cartes d’identité de Hong Kong et de Macao</string>
+    <string name="CRET_TYPE_ITEM5">Carte d’identité de Taiwan</string>
+    <string name="CRET_TYPE_ITEM6">ID temporaire</string>
+    <string name="CRET_TYPE_ITEM7">Certificat de police</string>
+    <string name="CRET_TYPE_ITEM8">Autres</string>
+    
+    <string name="zn_error_msg">ne peut pas être vide, et seulement pour les Chinois et les Anglais ou numérique! </string>
+    <string name="tax_error_msg">Ne peut pas être vide, et uniquement pour l’anglais ou le numérique, Soulignez! </string>
+    <string name="msg_error_userid"> Nom du compte seulement 6-16 chiffres ou lettres! </string>
+    <string name="msg_error_pass">Le nouveau mot de passe doit être combiné de 6 à 16 lettres, chiffres ou caractères spéciaux dans les deux types de combinaison de mot de passe!</string>
+    <string name="msg_error_confirmpass">Confirmez que le mot de passe de connexion n’est pas correct!</string>
+    <string name="msg_error_tel">S’il vous plaît entrer un numéro de téléphone valide</string>
+    <string name="msg_error_mail">S’il vous plaît entrer un email valide</string>
+    <string name="msg_error_mailnum">Zip uniquement numérique</string>
+    <string name="msg_error_timeblank"> Validité des documents ne peut pas être null </string>
+    <string name="msg_error_timerror"> Validité non inférieure à la date actuelle!</string>
+    <string name="sign_loading">Loading...</string>
+    <string name="sign_failed">Échec de l’enregistrement </string>
+    <string name="sign_success">demande est</string>
+    <string name = "design_pic">Ajouter une image</string>
+     <string name = "design_pic_click">cliquez sur Sélectionner une image</string>
+     <string name = "design_pic_photo">appareil photo</string>
+     <string name = "design_pic_picture">Photos locaux</string>
+     <string name = "design_pic_wp">est pas une image valide de votre choix</string>
+    
+    
+    <!-- 登录 -->
+    <string name="login_tv_button"> Connexion </string>
+    <string name="login_tv_signupnow">sign up</string>
+    <string name="login_tv_jizhuyonghuming"> Mémoriser </string>
+    <string name="login_tv_duanxinmoshi">Mode SMS </string>
+    <string name="login_username_not_null"> Nom d’utilisateur ne peut pas être vide </string>
+    <string name="login_password_not_null"> Mot de passe ne peut pas être vide </string>
+    
+    
+    <string name="surecash_account_not_null">Compte Surecash ne peut pas être vide</string>
+    <string name="surecash_telenum_not_null">Le numéro de téléphone ne peut pas être vide</string>
+    <string name="surecash_account_jiaoyan">Le nCompte Surecash doit être de 12 chiffres</string>
+    <string name="surecash_telenum_jiaoyan">Le numéro de téléphone doit être de 11 chiffres et les deux premiers chiffres sont 01</string>
+    <string name="SureCash_pay">Please pay by sureCash</string> 
+    <string name="SureCash_request_fail">Demande interfaces surecash a échoué, sil vous plaît réessayer plus tard!</string>   
+    
+    
+    <string name="login_username_error">UserName Input Error</string>
+    <string name="login_password_error">Password Input Error</string>
+    <string name="login_progressdialog_title"> Attendez</string>
+    <string name="login_progressdialog_message">Connecter...</string>
+    <string name="login_message_success">Connexion réussi</string>
+    <string name="login_message_supply_server_error"> Erreur de la demande de serveur </string>
+    <string name="login_message_server_response_timeout"> Délai de la réaction de serveur </string>
+    <string name="login_message_unknow_error"> Erreur inconnu </string>
+    <string name="login_username"> Nom d’utilisateur </string>
+    <string name="login_password"> Mot de passe </string>
+    <string name="login_fail_lock"> Ce compte a été bloqué, veuillez réessayer dans 15 minutes </string>
+    <string name="login_fail_times"> Echec de connexion, le nombre de fois restant de connexion:</string>
+    <string name="login_fail_time_bad"> Echec de vérification, veuillez vous connecter à nouveau </string>
+    
+    <!-- 资源选择页面 -->
+    <string name="main_please_choose">Choisir dacheter des articles</string>
+    <string name="main_please_phoneno">Veuillez entrer un numéro de téléphone</string>
+    <string name="main_huafei_chongzhi">Recharge frais</string>
+    <string name="main_liuliangduanxin_chongzhi">SMS/Débit</string>
+    <string name="main_liuliang">Débit</string>
+    <string name="main_duanxin">SMS</string>
+    <string name="main_please_chooseelec">veuillez sélectionner compagnie</string>
+	<string name="str_dianxingongsi">Entreprise de télécommunications</string>
+	<string name="str_phoneno">Numéro de téléphone:</string>
+	<string name="dianxin_querenchongzhi">La confirmation de la recharge</string>
+	<string name="dianxin_zhifujine">Le montant à payer</string>
+	<string name="dianxin_chongzhijine">La quantité de recharge</string>
+	<string name="dianxin_fuwufei">Service Fee</string>
+	<string name="dianxin_shangpingxx">Des informations de marchandise</string>
+	<string name="dianxin_success">Recharge réussie</string>
+	<string name="dianxin_failed">recharge L’échec！</string>
+	<string name="dianxin_queren">Confirmation</string>
+	<string name="dianxinxiangqing_error1">Veuillez choisir un montant</string>
+	<string name="dianxinxiangqing_error2">Veuillez saisir le montant</string>
+	<string name="dianxin_duanxinchongzhi">Un SMS de recharge</string>
+	<string name="dianxin_liuliangchongzhi">Le flux de recharge</string>
+	<string name="dianxin_please_chooseProduct">Veuillez sélectionner les marchandises</string>
+    <!-- 主框架标题栏 -->
+    <string name="main_title_hexing"> Plate-forme Hexpay</string>
+    <string name="main_title_xitongshezhi"> Configuration </string>
+    <string name="main_title_zhuxiao"> Résiliation </string>
+    <string name="dlg_tuichudenglu_title"> Déconnexion</string>
+    <string name="dlg_tuichudenglu_btn_zjtc"> Déconnexion</string>
+    <string name="dlg_tuichudenglu_btn_scjl"> Génération </string>
+    <string name="dlg_tuichudenglu_tv_tcts">Générer l’enregistrement?</string>
+     <string name="btn_keyback_title">Are you sure you want to exit?</string>
+    <string name="btn_keyback_yes">Yes</string>
+    <string name="btn_keyback_no">Cancel</string>
+    
+    <!-- 主框架欢迎栏 -->
+    <string name="main_welcome_huangyingnin"> Bienvenu </string>
+    <string name="main_welcome_jingrishoudian"> Vente d’aujourd’hui</string>
+    <string name="main_welcome_baozhengjinyue"> Solde:</string>
+    <string name="main_welcome_jingrishoudian_unit"> Somme </string>
+    
+    <!-- 收费&&售电主页面界面 -->
+    <string name="shoufeidetail_tv_yonghudizhi"> Adresse:</string>
+    <string name="shoufeidetail_tv_lianxidianhua">Téléphone:</string>
+    <string name="shoufeidetail_tv_dianligongsi"> Société d’électricité:</string>
+    <string name="shoufeidetail_tv_dianfeiyuefen"> Mois:</string>
+    <string name="shoufeidetail_tv_zhangdantiaoshu"> Addition:</string>
+    <string name="shoufeidetail_tv_shoudianjine"> Montant de vente:</string>
+    <string name="shoufeidetail_tv_zhangdanjine"> Montant d’addition:</string>
+    <string name="shoufeidetail_tv_dianbiaobianhao"> Code de compteur:</string>
+    <string name="shoufeidetail_tv_fuwufei"> Frais de service:</string>
+    <string name="shoufeidetail_tv_yingfujine"> Montant à payer:</string>
+    <string name="shoufeidetail_tv_qizhongdianfei"> dont les frais d’électricité:</string>
+    <string name="shoufeidetail_tv_qizhongweiyuejin"> dont la contravention:</string>
+    <string name="shoufeidetail_tv_zhengzaijiazai">Ajouter la page suivante…</string>
+     <string name="shoufeidetail_phone_error">Number format error,please input again!</string>
+         <!-- 购买TOKEN -->
+    <string name="buytoken_input_hint">Input Phone No.</string>
+    
+    <!-- 主框架收费，凭证补打，冲正申请界面 -->
+    <string name="main_edittext_input_hints">Entrez NO. foyer /NO. compteur</string>
+    <string name="main_button_shoufei_qingkong"> Vider </string>
+    <string name="main_button_shoufei_huitui"> Retourner </string>
+    <string name="main_button_anyonghu"> Rechercher par l’utilisateur</string>
+    <string name="main_button_andianbiao">Rechercher par No. compteur</string>
+    <string name="main_chongzheng_edittext_input_hints">Entrez No. foyer</string>
+    <string name="main_chongzheng_button_chaxun"> Rechercher </string>
+    <string name="main_edittext_input_hints1">Entrez No. foyer</string>
+    <string name="main_button_readcard"> Lire la carte </string>
+    
+    <!-- 列表下拉刷新 -->
+    <string name="note_pull_down"> Descendre pour rafraîchir&#8230;</string>
+    <string name="note_pull_refresh"> Relâcher pour rafraîchir &#8230;</string>
+    <string name="note_pull_loading"> En cours de chargement&#8230;</string>
+    <string name="note_update_at"> Mise à jour:% 1 $ s </string>
+    <string name="note_not_update"> N\'a pas été mis à jour </string>
+    
+    <!-- 收费详情 -->
+    <string name="shoufeixiangqing_tv"> Détail d’encaissement </string>
+    <string name="shoufeixiangqing_tv_gongjishoufei"> Encaissement total :</string>
+    <string name="shoufeixiangqing_btn_querenshoufei"> Confirmer l’encaissement </string>
+    <string name="shoufeixiangqing_tv_querengoudian">Confirmer</string>
+    <string name="shoufeixiangqing_tv_surecashbiaoti">Surecash informations sur le compte</string>
+      
+    <string name="shoufeixiangqing_tv_zhifuzonge"> Montant total à payer :</string>
+    <string name="shoufeixiangqing_tv_surecashzhanghu">SureCash Account</string>
+    <string name="shoufeixiangqing_tv_surecashshoujihaoma">Cellphone Number</string>
+    
+    <string name="shoufeixiangqing_tv_goudianliang">Quantité d\'achat:</string>
+    <string name="shoufeixiangqing_tv_goudianjine"> Montant d’achat：</string>
+    <string name="shoufeixiangqing_tv_shouxufei"> Comission :</string>
+    <string name="shoufeixiangqing_btn_querengoudian">Montant d\'achat</string>
+    <string name="shoufeixiangqing_btn_surecashqueren">déterminer</string>
+     <string name="shoufeixiangqing_btn_surecashcheckqueren">déterminer</string>
+    <string name="shoufeixiangqing_btn_zaicidayin">Réimprimer</string>
+    <string name="shoufeixiangqing_btn_bangka"> Lier la carte </string>
+    <string name="dlg_goudianchenggong_token"> Jeton</string>
+    <string name="dlg_goudianchenggong_title">Achat réussi</string>
+    <string name="dlg_goudianchenggong_zcdy">Réimprimer/Ecrire carte</string>
+    <string name="dlg_goudianchenggong_bangka"> Lier la carte </string>
+    <string name="dlg_goudianchenggong_querenbangka"> Confirmer la liaison de carte </string>
+    <string name="shoudianxiangqing_tv_cysdje">Montant</string>
+    <string name="shoudianxiangqing_tv_srje"> Montant entré</string>
+    <string name="shoudianxiangqing_btn_zdhbsf">Charge de consolidation</string>
+    <string name="shoudianxiangqing_btn_huichequeren"></string>
+    <string name="shoudianxiangqing_title">Détail de vente</string>
+    <string name="shoudianxiangqing_kahao">No. carte</string>
+    <string name="shoudianxiangqing_btn_sf"> Encaissement </string>
+    <string name="shoudianxiangqing_btn_sd">Vente</string>
+    <string name="shoudianxiangqing_tv_je">Entrez le montant</string>
+    <string name="shoufeixiangqing_btn_querenbangka">Confirmer la liaison</string>
+
+    <string name="shoufeixiangqing_btn_citiaokabangka">Une carte à bande magnétique</string>
+    <string name="shoufeixiangqing_btn_tiaomabangka">Le Code bidimensionnel</string>
+
+    <string name="shoudianxiangqing_error1"> Les conditions entrées ne peuvent pas être vides </string>
+    <string name="shoudianxiangqing_error2">Entrez le montant non inférieur à 1</string>
+    <string name="shoufeixiangqing_shoufeishibai"> Echec d’encaissement!</string>
+    <string name="shoufeixiangqing_fuwufeijisuanshibai"> Echec du calcul de commission!</string>
+    <string name="shoufeixiangqing_goudianshibai">Délai d’attente de communication, s’il vous plaît essayer à nouveau!</string>
+    <string name="shoufeixiangqing_wangluoyichang"> Anormalie de réseau!</string>
+    <string name="error"> Erreur </string>
+    <string name="error_open_magnetic_card"> Impossible d\'ouvrir le dispositif de carte à bande magnétique </string>
+    <string name="dialog_comfirm"> Confirmer </string>
+    <string name="warm_password_lockWarm"> Les erreurs de saisie du mot de passe de paiement en continu ont atteint la limite du système , le mot de passe de payement a été bloqué, le système se déverrouille automatiquement dans deux heures </string>
+    <string name="warm_password_lock"> Les erreurs de saisie du mot de passe de paiement en continu ont atteint la limite du système , le mot de passe de payement a été bloqué</string>
+    <string name="warm_password_inputPer"> Erreur du mot de passe, il vous reste encore </string>
+    <string name="warm_password_inputLeft"> chance！</string>
+    <string name="warm_cardType_wufashibie"> Impossible d’identifier le type de carte!</string>
+    <string name="shoudianxiangqing_tv_zffs">Mode de paiement</string>
+    
+        <string name="shoudianxiangqing_pay_token">Input Token</string>
+    <string name="shoudianxiangqing_pay_pin">Input Pin Code</string>
+    <string name="shoudianxiangqing_error_token">please input Token Code</string>
+    <string name="shoudianxiangqing_error_pin">please input pin Code</string>
+    <string name="shoudianxiangqing_label_tokenamt">TOKEN Amount:</string>
+    <string name="shoudianxiangqing_dialog_title">Uncompleted order</string>
+    
+    
+    <!-- 售电详情 -->
+    <string name="shoudianxiangqing_bangkashibai"> Liaison échouée!</string>
+    <string name="shoudianxiangqing_bangkachenggong">Liaison réussie!</string>
+    <string name="shoudianxiangqing_xiekachenggong">Ecrit réussi!</string>
+    <string name="shoudianxiangqing_xiekashibai"> Echec dn\'écrit!</string>
+    <string name="card_type_select">Choisissez le type de carte IC</string>
+    <string name="card_type_4428">4428</string>
+    <string name="card_type_4442">4442</string>
+    <string name="auto_readCard_success"> Lecture réussie!</string>
+    <string name="auto_readCard_fail"> Lecture échouée!</string>
+    <string name="warm_swipcard"> Validez…</string>
+    <string name="warm_bandcard"> Liez…</string>
+    <string name="shoudianxiangqing_dukachenggong">Lecture réussie!</string>
+    <string name="shoudianxiangqing_dukashibai"> Lecture échouée!</string>
+        <string name="shoudianxiangqing_sendsms_title">Envoyer SMS</string>
+    <string name="shoudianxiangqing_sendsms_num">S\'il vous plaît entrer votre numéro de téléphone</string>
+     <string name="shoudianxiangqing_sure">Yes</string>
+    <string name="shoudianxiangqing_titletip">Tip</string>
+    
+    <!-- 凭证补打详情 -->
+    <string name="str_pingzhengbuda">Rechercher la preuve </string>
+    <string name="pinzhengbuda_btn_bd"> Réimprimer </string>
+    <string name="pinzhengbuda_btn_xk"> Ecrire la carte </string>
+    <string name="str_jiaoyidanhao"> No. transaction: </string>
+    <string name="str_jiaofeijine">Montant total: </string>
+    <string name="str_jiaoyishijian"> Datevalidation: </string>
+    <string name="str_yewuleixing"> Type: </string>
+    <string name="str_dianligongsi"> Société d’électricité: </string>
+    <string name="str_biaohao"> No. compteur: </string>
+    <string name="str_huhao">No. foyer: </string>
+    <string name="str_token"> Jeton: </string>
+    
+    <!-- 主框架冲正申请明细界面 -->
+    <string name="detail_chongzhengshenqing_hints">Entrez No. foyer</string>
+    <string name="detail_chongzhengshenqing_listtv_jiaoyidanhao">No. transaction</string>
+    <string name="detail_chongzhengshenqing_listtv_yewuleixing"> Type d’activité</string>
+    <string name="detail_chongzhengshenqing_listtv_jiaofeijine"> Montant à payer </string>
+    <string name="detail_chongzhengshenqing_listtv_jiaoyishijian"> Temps de transaction </string>
+    <string name="detail_chongzhengshenqing_listtv_dianligongsi"> Société d’électricité</string>
+    <string name="detail_chongzhengshenqing_listtv_huhao"> No. foyer</string>
+    <string name="detail_chongzhengshenqing_listtv_zhuangtai"> Etat </string>
+    <string name="detail_chongzhengshenqing_listtv_caozuo">Opérer</string>
+    <string name="dlg_rquerenchongzheng_btn_title">Confirmer Renverser</string>
+    <string name="dlg_rquerenchongzheng_czyy"> Autres </string>
+    <string name="dlg_rquerenchongzheng_spinner_czyy">Raison </string>
+    <string name="str_chongzheng"> Renverser </string>
+    <string name="str_yufufei"> Prépayé </string>
+    <string name="str_houfufei"> Postpayé </string>
+    <string name="str_dianfeicuoshou"> Erreur de charge</string>
+    <string name="str_qitayuanyin"> Autres raisons </string>
+    <string name="str_inputresason">Entrez la raison</string>
+    <string name="str_querenchenggong">Demande réussie</string>
+    <string name="str_lianwangshibai">Echec de connexion!</string>
+    <string name="str_meiyoujilu"> Sans enregistrement!</string>
+    <string name="str_chognzhengchaxun"> Rechercher le renversement </string>
+    <string name="str_shenhe"> Soumis </string>
+    <string name="str_yichongzheng">Renversé</string>
+    <string name="str_jujue"> Refusé</string>
+    
+    <!-- 主框架销售订单界面 -->
+	<string name="main_xiaoshoudingdan_select_weizhifu">Unpaid</string>
+	<string name="main_xiaoshoudingdan_select_chenggong">Successful</string>
+	<string name="main_xiaoshoudingdan_select_chulizhong">Processing</string>
+	<string name="main_xiaoshoudingdan_select_guanbi">Close</string>
+	<string name="main_xiaoshoudingdan_select_disanfang">third party payment </string>
+	<string name="main_xiaoshoudingdan_select_weizhi">other </string>
+	<string name="main_xiaoshoudingdan_btn_detail">details</string>
+	<string name="main_xiaoshoudingdan_btn_close">Cancel orde</string>
+	<string name="main_xiaoshoudingdan_btn_turnon">Continue to pay</string>
+	<string name="main_xiaoshoudingdan_title_qxzcz">Please select </string>
+	<string name="main_xiaoshoudingdan_chaxun">Query</string>
+	<string name="main_xiaoshoudingdan_prdordno">Ord.No</string>
+	<string name="main_xiaoshoudingdan_nenlname">operator</string>
+	<string name="main_xiaoshoudingdan_meter">Meter</string>
+	<string name="main_xiaoshoudingdan_state">Status</string>
+	<string name="main_xiaoshoudingdan_date">Date</string>
+	<string name="main_xiaoshoudingdan_amount">Amount</string>
+    
+    <!-- 收费日结界面 -->
+    <string name="main_shoufeirijie_textview_zaituchaxun"> Rechercher sur la route </string>
+    <string name="main_shoufeirijie_textview_daozhangchaxun">Rechercher le compte</string>
+    <string name="main_shoufeirijie_listtv_rijiebianhao">Code RDC</string>
+    <string name="main_shoufeirijie_listtv_rijiejine">Montant RDC </string>
+    <string name="main_shoufeirijie_listtv_rijieriqi">Date RDC </string>
+    <string name="main_shoufeirijie_listtv_daozhangzhuangtai">Etat </string>
+    <string name="main_shoufeirijie_listtv_chulirenyuan">Personneà traiter</string>
+    <string name="main_shoufeirijie_listtv_chuliriqi">Dateà traiter</string>
+    <string name="main_shoufeirijie_listtv_caozuo">Opérer</string>
+    <string name="dlg_rijiexiangqing_title"> Détail RDC</string>
+    <string name="dlg_rijiexiangqing_btn_dayin"> Imprimer </string>
+    <string name="str_zaitu"> En route </string>
+    <string name="str_daozhang"> Enregistrer</string>
+    <string name="str_quxiao"> Annuler </string>
+    <string name="str_qurendaozhang"> Confirmer </string>
+    <string name="str_rijiechaxun"> Rechercher RDC</string>
+    <string name="str_dayin"> Imprimer </string>
+    <string name="str_dayintishi"> Conseils d\'impression </string>
+    <string name="str_dayinrijiedan">Imprimer le relevé RDC?</string>
+    <string name="str_queding"> Confirmer </string>
+    <string name="str_quxiaorijie">Annuler RDC</string>
+    <string name="str_quxiaojilu">Annuler l\'enregistrement RDC? </string>
+    <string name="str_querendaozhang"> Confirmer l\'enregistrement?</string>
+    <string name="str_pingzhengdayin"> Imprimer la preuve </string>
+    
+    <!-- 日结详情界面 -->
+    <string name="detail_shoufeirijie_listtv_orderno">Order No.</string>
+    <string name="detail_shoufeirijie_listtv_ordertime">Order Time</string>
+    <string name="detail_shoufeirijie_listtv_orderamt">Order Amount</string>
+    <string name="detail_shoufeirijie_listtv_biztype">Biztype</string>
+    <string name="detail_shoufeirijie_listtv_printafter">Print After</string>
+    <string name="detail_shoufeirijie_listtv_printall">Print All</string>
+    <string name="detail_shoufeirijie_listtv_prepaid">Prepaid</string>
+    <string name="detail_shoufeirijie_listtv_postpaid">Postpaid</string>
+    <string name="detail_shoufeirijie_listtv_reversal">Reversal</string>
+    <string name="str_caozuo">Operate</string>
+    <string name="str_printtof">Print TOF</string>
+    <string name="str_tofno">TOF No</string>
+    <string name="str_dayinordetail">Print TOF or check TOF detail?</string>
+    <string name="str_detail">Detail</string>   
+    
+    <!-- 到帐确认界面 -->
+    <string name="main_daozhangqueren_textview_zaituchaxun">Etat</string>
+    <string name="main_daozhangqueren_textview_jiekuanrenyuan">Caissier </string>
+    <string name="main_daozhangqueren_button_jiekuanrenyuan"> Rechercher </string>
+    <string name="main_daozhangqueren_listtv_rijiebianhao">No. RDC </string>
+    <string name="main_daozhangqueren_listtv_rijiejine"> Montant RDC</string>
+    <string name="main_daozhangqueren_listtv_rijierenyuan">Personnel RDC</string>
+    <string name="main_daozhangqueren_listtv_rijieriqi"> Date RDC </string>
+    <string name="main_daozhangqueren_listtv_daozhangzhuangtai">Etat </string>
+    <string name="main_daozhangqueren_listtv_chuliren"> Opérateur </string>
+    <string name="main_daozhangqueren_listtv_chuliriqi"> Date d\'opération</string>
+    <string name="main_daozhangqueren_listtv_caozuo"> Opérer</string>
+    <string name="str_alluser"> Tout </string>
+    
+    <!-- 主框架收支明细界面 -->
+    <string name="main_shouzhimingxi_textview_dangyue">Mois</string>
+    <string name="main_shouzhimingxi_textview_dangri"> Date</string>
+    <string name="main_shouzhimingxi_textview_benzhou"> Semaine</string>
+    <string name="main_shouzhimingxi_button_chaxun">Rechercher</string>
+    <string name="main_shouzhimingxi_button_dayin">Imprimer</string>
+    <string name="main_shouzhimingxi_listtv_jiaoyidanhao">No. transaction</string>
+    <string name="main_shouzhimingxi_listtv_jiaoyileixing"> Type</string>
+    <string name="main_shouzhimingxi_listtv_jiaoyishijian"> Temps de transaction </string>
+    <string name="main_shouzhimingxi_listtv_shouru"> Recette </string>
+    <string name="main_shouzhimingxi_listtv_zhichu"> Dépense </string>
+    <string name="main_shouzhimingxi_listtv_yuer"> Solde </string>
+    <string name="main_shouzhimingxi_qishiriqi_select"> Choisir la date de commencement </string>
+    <string name="main_shouzhimingxi_zhongzhiriqi_select"> Choisir la date d’achèvement </string>
+    <string name="main_shouzhimingxi_select_warm"> La date d’achèvement ne peut pas être plus tôt que la date de commencement !</string>
+    <string name="main_zhifumima"> Code de payement:</string>
+    <string name="main_shouzhimingxi_shouzhileixing_goudianxiaofei"> Achat d’électricité</string>
+    <string name="main_shouzhimingxi_shouzhileixing_yajinchongzhi"> Charge de caution </string>
+    <string name="main_shouzhimingxi_shouzhileixing_shoudianfanyong">Commission</string>
+    <string name="main_shouzhimingxi_shouzhileixing_baozhengjin"> Caution </string>
+    <string name="main_shouzhimingxi_shouzhileixing_changhuanfuwufei"> Rembourser les frais de service </string>
+    <string name="main_shouzhimingxi_shouzhileixing_chanshengfuwufei"> Générer des frais de service </string>
+    <string name="main_shouzhimingxi_shouzhileixing_xiaofeichongzheng"> Renverser la consommation</string>
+    <string name="main_shouzhimingxi_shouzhileixing_fanyongchongzheng">Renverser la commission</string>
+    <string name="main_shouzhimingxi_listtv_yuer_port">Bal</string>
+    <string name="main_shouzhimingxi_spinner_type">Select Type</string>
+    
+    <!-- 押金充值界面 -->
+    <string name="main_yajinchongzhi_input_error">Montant de la recharge pas moins que le montant minimum</string>
+    <string name="detail_yajinchongzhi_title">Choose a payment method</string>
+    <string name="detail_yajinchongzhi_alipay">Alipay</string>
+    <string name="detail_yajinchongzhi_wechat">WeChat Pay</string>
+    <string name="detail_yajinchongzhi_bank">Bank Card Pay</string>
+    <string name="detail_yajinchongzhi_cash">Recharge Amount</string>
+    <string name="detail_yajinchongzhi_mark">Remark</string>
+    <string name="detail_yajinchongzhi_rechar">Recharge Now</string>
+    
+        <!-- WXPayEntryActivity -->
+	<string name="pay_result_tip">这个界面用于显示第三方app通过微信支付的结果</string>
+	<string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+	<string name="pay_result_title" >完成</string>
+	<string name="pay_result_success">支付成功</string>
+	<string name="pay_result_error2">omis de payer, la commande a été annulée</string>
+	<string name="pay_result_error">paiement a échoué, s\'il vous plaît re-paiement</string>
+    
+    <!-- 主框系统设置界面 -->
+    <string name="main_xitongshezhi_textview_xianshimoshi"> Mode d’affichage </string>
+    <string name="main_xitongshezhi_textview_yuyinshezhi">Configuration de lvoix</string>
+    <string name="main_xitongshezhi_textview_yuyanshezhi"> Configuration de temps </string>
+    <string name="main_xitongshezhi_textview_suopingshijian">Durée de verrouillage</string>
+    <string name="main_xitongshezhi_textview_yongliangtongji"> Statistiquesd\'utilisation </string>
+    <string name="main_xitongshezhi_textview_wlan">WLAN</string>
+    <string name="main_xitongshezhi_textview_wlansetting">Other Configurer </string>
+    <string name="main_xitongshezhi_textview_sim1exist"> SIM1: Déjà installé</string>
+    <string name="main_xitongshezhi_textview_sim2exist"> SIM2:Déjà installé</string>
+    <string name="main_xitongshezhi_textview_sim1notexist"> SIM1:Non installé</string>
+    <string name="main_xitongshezhi_textview_sim2notexist"> SIM2: Non installé</string>
+    <string name="main_xitongshezhi_textview_current_traffic"> Consommation de cette fois:</string>
+    <string name="main_xitongshezhi_textview_today_traffic"> Consommation du jour:</string>
+    <string name="main_xitongshezhi_textview_all_traffic"> Utilisation de débit actuelle:</string>
+    <string name="main_xitongshezhi_textview_chinese">中文</string>
+    <string name="main_xitongshezhi_textview_english">English</string>
+    <string name="main_xitongshezhi_textview_french">Français</string>
+    <string name="main_uploadfailed">Set Upload échoué!</string>
+    <string name="main_xitongshezhi_textview_address">Server Address</string>
+    <string name="main_xitongshezhi_textview_address1">Master:</string>
+    <string name="main_xitongshezhi_textview_address2">Spare1:</string>
+    <string name="main_xitongshezhi_textview_address3">Spare2:</string>
+    
+    <!-- 注销 -->
+    <string name="logout_progressdialog_message"> En train de résilier…</string>
+    <string name="logout_message_success">Résiliation réussie</string>
+    <string name="logout_progressdialog_message_pbilldailyapply"> En train de générer l’enregistrement du règlement journalier…</string>
+    <string name="logout_dialog_rj_tv_number"> No. RDC:</string>
+    <string name="logout_dialog_rj_tv_date"> Date RDC:</string>
+    <string name="logout_dialog_rj_tv_money"> Montant RDC:</string>
+    <string name="logout_dialog_rj_tv_zhuangtai"> Etat:</string>
+    <string name="logout_dialog_rj_btn_print"> Imprimer </string>
+    <string name="logout_print_status_zaitu"> En route </string>
+    <string name="logout_print_status_daozhang">Enregistrer</string>
+    <string name="logout_dialog_sms_rj"> Relevé RDC </string>
+    <string name="logout_dialog_sms_rj_no"> Code:</string>
+    <string name="logout_dialog_sms_rj_date"> Temps:</string>
+    <string name="logout_dialog_sms_rj_number"> Somme:</string>
+    <string name="logout_dialog_sms_rj_money"> Montant:</string>
+    
+    <!-- 公告 -->
+    <string name="notify"> Annonce:</string>
+    <string name="notify_dialog">Annonce</string>
+    <string name="notify_dialog_button_close">La fermeture</string>
+    <string name="notify_dialog_message_none">Les données</string>
+    
+    <!-- 版本更新 -->
+    <string name="update_alertdialog_message"> La nouvelle version est détectée, mettre à jour?</string>
+    <string name="update_alertdialog_positive_button"> Mettre à jour </string>
+    <string name="update_alertdialog_negative_button">Ne mettre pas à jour</string>
+    <string name="update_progressdialog_title">Mettre à jour...</string>
+    <string name="update_progressdialog_message">Attendez…</string>
+    <string name="update_toast_version_latest"> La version actuelle est la dernière </string>
+    
+    <!-- 打印 -->
+    <string name="printering">Imprimer dans...</string>
+    <string name="printer_status_timeout">Heures supplémentaires d’impression</string>
+    <string name="printer_status_success">Impression réussie</string>
+    <string name="printer_status_nopaper"> L\'imprimante n\'a plus de papier </string>
+    <string name="printer_status_hot"> La surchauffe de l\'imprimante </string>
+    <string name="printer_status_full"> Tampon de l\'imprimante est pleine </string>
+    <string name="printer_status_noconnect"> Déconnexion de l\’imprimante </string>
+    <string name="printer_status_other_error"> Autres erreur d’impression </string>
+
+    <!-- 其他 -->
+    <string name="progress_timeout"> Délai d’opération </string>
+    <string name="progress_shoufei_title">Encaissement</string>
+    <string name="progress_zidongduka_title"> Lecture automatique de carte </string>
+    <string name="progress_tishi_title"> Conseil </string>
+    <string name="progress_insert_card"> Insérez la carte IC…</string>
+    <string name="progress_conducting"> En cours de traitement, veuillez attendre…</string>
+    <string name="login_message_no_network_connected">Sans réseau</string>
+    <string name="progress_upload"> Soumettre les paramètres </string>
+    <string name="wifi_setting">WiFi Configurer</string>
+    <string name="ethernet_setting"> Configuration Ethernet </string>
+    <string name="mobile_setting"> Configuration du réseau mobile </string>
+    <string name="networksetting_back"> Retourner </string>
+    <string name="network_setting_login"> Configuration de réseau </string>
+    <string name="network_setting_server_address">Adresse de messagerie non contrôlée</string>
+    <string name="network_setting_server_address_button_ensure">déterminer</string>
+    <string name="network_setting_server_address_button_cancel">supprimer</string>
+    <string name="network_setting_server_address_button_scan">Balayage</string>
+    <string name="network_setting_server_address_message_not_null">Serveurs à l’adresse</string>
+    <string name="shoudianxiangqing_jineshurubuzhengque"> Erreur du format de montant!</string>
+    <string name="writingcard"> En train d’écrire la carte…</string>
+    <string name="writecard_nonemessage"> Sans donnée de l’écriture de carte!</string>
+    <string name="writecard_fail"> Echec de l’écriture de carte!</string>
+    <string name="writecard_changePW_fail"> Echec de la modification du mot de passe!</string>
+    <string name="writecard_repairData_fail"> Echec de la récupération des données!</string>
+    <string name="writecard_iccardpw_fail"> Erreur du mot de passe de la carte IC Ou le succès de la carte d\'écriture!</string>
+    <string name="writecard_verify_fail"> Echec de vérification!</string>
+    <string name="writecard_check_card"> La carte IC n’est pas détectée!</string>
+    <string name="dialog_check"> Rechercher </string>
+    <string name="dialog_title_accordingtotime">Rechercher selon le temps </string>
+    <string name="begin_date"> Date de commencement </string>
+    <string name="end_date"> Date d’achèvement </string>
+    <string name="trac_data_error"> Les données de la piste magnétique est incorrect!</string>
+    <string name="userno_or_meterno">No. foyer/No. compteur:</string>
+    <string name="username"> Nom de foyer:</string>
+
+    <string name="scan_title">Code QR/Code de dimension</string>
+    <string name="scan_text_1"> Déposer le code à deux dimensions dans la boîte, vous pouvez balayer automatiquement </string>
+    <string name="scan_text">Mettre le code à deux dimensions dans la surface, il peut balayer automatiquement</string>
+    <string name="scan_fail"> Echec de balayage!</string>
+    <string name="dialog_sureout"> Pour déterminer la sortie d’application?</string>
+    <string name="dialog_yes">Est</string>
+	<string name="dialog_no">Non</string>
+	<string name="toast_back">Appuyez à nouveau pour quitter le programme</string>
+    
+    
+    <!-- 竖屏系统设置项标签 -->
+    <string name="main_xitongshezhi_textview_xianshimoshi_port"> Mode d’affichage </string>
+    <string name="main_xitongshezhi_textview_yuyinshezhi_port"> Configuration de voix </string>
+    <string name="main_xitongshezhi_textview_yuyanshezhi_port"> Configuration de langue </string>
+    <string name="main_xitongshezhi_textview_suopingshijian_port">Durée de verrouillage</string>
+    <string name="main_xitongshezhi_textview_yongliangtongji_port"> Statistiques d’utilisation </string>
+    
+    <!-- 短信售电 -->
+    <string name="duanxingoudian_tv_dianbiaobianhao"> Numéro de compteur:</string>
+    <string name="shoufeidetail_btn_duanxinshoudian"> Vente d’électricité par SMS</string>
+    <string name="duanxingoudian_btn_sendAgain"> Envoyer de nouveau </string>
+    <string name="duanxingoudian_tv_timeout"> Délai de l’envoi de SMS, veuillez envoyer de nouveau </string>
+    <string name="duanxingoudian_inputNo">Entrez No. compteur!</string>
+    <string name="duanxingoudian_tv_notExist"> Numéro de compteur n’existe pas, veuillez vendre l’électricité de nouveau après avoir confirmé</string>
+    <string name="duanxingoudian_tv_shoudianchenggong"> Vente réussie</string>
+    <string name="duanxingoudian_tv_shoudianshibai">Vente échouée</string>
+    <string name="duanxingoudian_tv_shoudianchaoshi"> Délai de vente</string>
+    <string name="duanxingoudian_tv_shoudianqueren">Confirmer la vente</string>
+    <string name="duanxingoudian_tv_Token"> Token:</string>
+    <string name="duanxingoudian_sent_success">Envoi SMS réussi!</string>
+    <string name="duanxingoudian_sent_fail">Envoi SMS échoué!</string>
+    <string name="duanxingoudian_ticket_title"> Relevé d’encaissement </string>
+    <string name="duanxingoudian_fukuanjine"> Montant à payer:</string>
+
+    <!-- 390快捷键 -->
+    <string name="main_button_anyonghu_390"> Rechercher par l’utilisateur</string>
+    <string name="main_exception_message"> Désolé, anormalie de système, veuillez vous vous connecter à nouveau..</string>
+
+    <!-- 磁条卡 -->
+    <string name="warm_swipcard_again">Revalider la carte!</string>
+    <string name="warm_swipcard_dataError">Anormalie des données, revalidez!</string>
+     <!-- 蓝牙打印机 -->
+     <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="bluetooth">Bluetooth Printer</string>
+    <string name="usb">USB</string>
+    <string name="ethernet">ethernet</string>
+    <string name="print_mode">Print mode</string>
+    <string name="tsc">Label</string>
+    <string name="esc">Receipt</string>
+    <string name="print_text">Print text</string>
+    <string name="print_image">Print bitmap</string>
+    <string name="print_1d_barcode">Print 1D barcode</string>
+    <string name="open">Open port</string>
+    <string name="close">Close port</string>
+    <string name="receive">Received data</string>
+    <string name="query">Query status</string>
+    <string name="init_port_info">Port:undefined Addr:undefined</string>
+    <string name="port">Port:</string>
+    <string name="ok">OK</string>
+    <string name="address">Name:</string>
+    <string name="port_parameters_wrong">Invalid parameters！</string>
+    <string name="port_parameters_is_not_save">Port parameters is not saved！</string>
+    <string name="gprinter001">Printer</string>
+    <string name="gprinter002">Printer 002</string>
+    <string name="gprinter003">Printer 003</string>
+    <string name="gprinter004">Printer 004</string>
+    <string name="gprinter005">Printer 005</string>
+    <string name="disconnect">disconnect</string>
+    <string name="cut">disconn</string>
+    <string name="cutting">disconnecting</string>
+    <string name="connect">connect</string>
+    <string name="connected">connected</string>
+    <string name="connecting">connecting</string>
+    <string name="port_configuration">Port configuration</string>
+    <string name="bluetooth_is_not_enabled">bluetooth is not enabled</string>
+    <string name="title_paired_devices">Paired</string>
+    <string name="title_other_devices">New</string>
+    <string name="scan">Scan</string>
+    <string name="bluetooth_device_list">Bluetooth device list</string>
+    <string name="select_bluetooth_device">select bluetooth device</string>
+    <string name="none_bluetooth_device_found">none bluetooth device found</string>
+    <string name="none_paired">none paired</string>
+    <string name="refresh_bluetooth_list">refresh bluetooth list</string>
+    <string name="scaning">scaning</string>
+    <string name="usb_info">usb information</string>
+    <string name="refresh_usb_device">refresh usb devices</string>
+    <string name="ip_address">ip:</string>
+    <string name="default_ip_address">192.168.123.100</string>
+    <string name="port_number">port:</string>
+    <string name="default_port_number">9100</string>
+    <string name="bluetooth_address">bluetooth addr： </string>
+    <string name="usb_address">USB： </string>
+    <string name="usb_devices_list">USB devices list</string>
+    <string name="none_usb_device">none usb device connected</string>
+    <string name="current_version">current version</string>
+    <string name="find_new_version">Found new version</string>
+    <string name="whether_or_not_to_update">Update app？</string>
+    <string name="app_update">App update</string>
+    <string name="update">update</string>
+    <string name="not_update">ignore</string>
+    <string name="downloading">Downloading</string>
+    <string name="please_wait">please waiting</string>
+    <string name="download_complated">downloaded</string>
+    <string name="whether_or_not_setup_new_app">Setup new app?</string>
+    <string name="loading">Loading。。。</string>
+    <string name="cancel">Cancel</string>
+    <string name="copy_right_en">COPYRIGHT@2014 GPRINTER ALL RIGHTS RESERVERD</string>
+    <string name="copy_right_cn">佳博集团 版权所有</string>
+    
+    <string name="error_configuration">Please configure your serial port first.</string>
+    <string name="error_security">You do not have read/write permission to the serial
+		port.</string>
+    <string name="error_unknown">The serial port can not be opened for an unknown
+		reason.</string>
+    <string name="str_clear">Clear</string>
+    <string name="str_reset">Reset</string>
+    <string name="str_turn_on_backlight">Turn on backlight</string>
+    <string name="str_turn_off_backlight">Turn off backlight</string>
+    <string name="str_change_contrast">change contrast</string>
+    <string name="str_set_backlight_timeout">Set backlight timeout</string>
+    <string name="str_set_cursor_position">Set cursor position</string>
+    <string name="str_display_bitmap">Display bitmap</string>
+    <string name="str_input_in_current_position">Input in current position</string>
+    <string name="str_input_in_bebind_position">Input in bebind position</string>
+    <string name="str_get_backlight_status">Get backlight</string>
+    <string name="str_get_backlight_timeout">Get backlight timeout</string>
+    <string name="str_update">Update</string>
+    <string name="str_get_cursor_position">Get cursor position</string>
+    <string name="str_get_row_and_column">Get row and column</string>
+    <string name="str_have_been_turn_off_backlight">Display have been turn off backlight</string>
+    <string name="str_set_successful">set successful</string>
+    <string name="str_please_input_x_y">Please input x coordinate and y coordinate</string>
+    <string name="str_input_display_timeout">Please input turn off display timeout</string>
+    <string name="str_no_permission">No permission to do it</string>
+    <string name="str_ok">ok</string>
+    <string name="str_contrast">contrast</string>
+    <string name="str_set_contrast">Set contrast:</string>
+    <string name="str_set_brightness">Set brightness:</string>
+    <string name="str_close_port">Close port</string>
+    <string name="str_open_port">Open port</string>
+    <string name="str_port_status">Port status</string>
+    <string name="str_all_black">All black</string>
+    <string name="str_all_white">All White</string>
+    <string name="str_recovery">Recovery</string>
+    <string name="str_us_cn">chlish</string>
+	<string name="str_open_success">Device connection success!</string>
+    <string name="str_open_fail">Connection failed, please try again!</string>
+    <string name="str_open_hasuc">device connected</string>
+    <string name="str_noopen">Imprimante non connectée!</string>
+    <string name="str_note">Note</string>
+    <string name="str_goset">Mettre en place</string>
+    <string name="str_cancel">Annuler</string>
+    
+     <string name="zhuanzhang_all">All</string>
+    <string name="zhuanzhang_status01">Useful</string>
+     <string name="zhuanzhang_status02">Used</string>
+      <string name="zhuanzhang_status03">Retrieved</string>
+      <string name="zhuanzhang_type0">Unspecified</string>
+       <string name="zhuanzhang_type1">Specified</string> 
+        <string name="zhuanzhang_btn_add">Transfer</string> 
+      <string name="zhuanzhang_btn_query">Query</string> 
+      <string name="zhuanzhang_btn_findback">Retrieve</string> 
+      <string name="zhuanzhang_btn_ReBT">Recharge By Token &gt;&gt;</string> 
+      
+       <!-- token转账 -->
+       <string name="tran_label_cust">Agent Appointed Transfer</string> 
+       <string name="tran_label_user">Normal Transfer</string> 
+              <string name="tran_text_cust">Agent No.</string> 
+       <string name="tran_text_name">Name</string>
+       <string name="tran_text_address">Address</string>  
+       <string name="tran_text_tip">Please check the infromation is true or not</string> 
+       <string name="tran_hint_amt">Amount</string>
+       <string name="tran_hint_passwd">Pay Password</string>
+       <string name="tran_hint_phone">Phone No.</string>
+       <string name="tran_hint_verify">Verify No.</string>
+       <string name="tran_btn_complete">Confirm</string>
+        <string name="tran_btn_next">Next</string>
+        <string name="tran_btn_verify">Get</string>
+                <string name="tran_btn_retry">Retry</string>
+         <string name="tran_toast_error1">input infromation required please</string>
+        <string name="tran_toast_error2">input phone number</string>
+         <string name="tran_toast_error3">input Pay Password</string>
+         <string name="tran_toast_error4">input amount</string>
+          <string name="tran_toast_error5">The amount should be integer</string>
+       <string name="tran_toast_error6">System busy,please try again</string>
+        <string name="tran_toast_error7">Get verify number first</string>
+         <string name="tran_toast_error8">input verify number</string>
+          <string name="tran_toast_error9">Pay attention to your verify message please</string>
+           <string name="tran_toast_error10">Success</string>
+            <string name="tran_toast_error11">Close</string>
+             <string name="tran_toast_error12">Transfer again</string>
+             <string name="tran_print">Print</string>
+       <!-- Token入账 -->
+      <string name="tranin_text_token">TOKEN Pay</string>
+      <string name="tranin_dialog_title">Transfer</string>
+       <string name="tranin_dialog_hint1">Token</string>
+       <string name="tranin_dialog_hint2">PIN</string>
+     <string name="tranin_dialog_pbtn">confirm</string>
+     <string name="tranin_dialog_nbtn">cancle</string>
+     <string name="tranin_dialog_back"> &lt; Back</string>
+      <string name="tranin_btn_qry">Query</string>
+      <string name="tranin_suc_msg">Transfer Success</string>
+      <string name="tranin_suc_amt">Payment Amount</string>
+       <string name="tran_hint_fee">Fee</string>
+     <string name="tran_out_amt">Order Amount</string>
+     <string name="tran_in_amt">Transfer Amount</string>
+     <string name="tranin_suc_fee">Fee</string>
+     <string name="tranin_suc_commision">Commission</string>
+     <string name="tranin_suc_balance">Balance</string>
+     <string name="tranin_error1">please input Token</string>
+     <string name="tranin_error2">Query failed,please try again</string>
+     <string name="tranin_error3">please input PIN</string>     
+      <string name="tranin_error4">Recharge failed</string>     
+     <!-- 转账记录 -->
+     <string name="trecord_condition_sta">Status</string> 
+     <string name="trecord_condition_type">Type</string>
+     <string name="trecord_title_1">Phone No.</string>  
+     <string name="trecord_title_2">Amt</string>  
+     <string name="trecord_title_3">Agent</string>
+     <string name="trecord_title_4">Status</string>
+     <string name="trecord_title_5">Date</string>     
+     <string name="trecord_progress_title">Loading...</string>  
+     <string name="trecord_btndialog_msg">Sure to find the transfer Token of mobile phone number #{phone} back?</string>    
+     <string name="tranord_error1">System busy,please try again</string>
+      <string name="tranord_error2">Find Token back failed</string>
+     <string name="tranord_find_successmsg">Congratulations on your success with Token back. Please check your SMS! </string>
+      <string name="trecord_btndialog_negative">Close</string>
+
+    <!-- token退款 -->
+    <string name="refund_token_hint">please input TOKEN</string>
+    <string name="refund_token_query">Query</string>
+    <string name="refund_token_error1">please input TOKEN</string>
+    <string name="refund_token_error2">please input PIN</string>
+    <string name="refund_token_error3">System busy,please try again!</string>
+    <string name="refund_token_msg1">TOKEN Amount: </string>
+    <string name="refund_token_msg2">Refund Amount: </string>
+    <string name="refund_token_msg3">Fee: </string>
+    <string name="refund_tips">After the refund, TOKEN will not be available. Is the refund confirmed ? </string>
+    <string name="refund_pin_hint">please input PIN</string>
+    <string name="refund_confirm">Refund</string>
+    <string name="refund_dialog_calcle">Cancel</string>
+    <string name="refund_dialog_confirm">Confirm</string>
+    <string name="refund_success">Refund Success</string>
+
+    <string name="refund_success_recharge">Recharge Amount: </string>
+    <string name="refund_success_discount">Earning: </string>
+    <string name="refund_success_balance">Balance :</string>
+    <string name="refund_success_prdordno">Refund Order: </string>
+    <string name="refund_success_close">Close</string>
+    <string name="refund_success_print">Print</string>
+    
+    
+                <!-- Peach支付整合 -->
+     <!-- accessibility -->
+    <string name="connect_checkout_layout_accessibility_payment_icon">payment method</string>
+    <string name="connect_checkout_layout_accessibility_list_disclosure">select payment method</string>
+    <string name="connect_checkout_layout_accessibility_cancel_checkout">cancel checkout</string>
+    <string name="connect_checkout_layout_accessibility_originating_app_icon">originating app icon</string>
+
+    <!-- content -->
+    <string name="connect_checkout_layout_text_selected_payment_method">Payment method</string>
+    <string name="connect_checkout_layout_text_review_and_confirm">Review and Confirm</string>
+    <string name="connect_checkout_layout_text_pay">Pay Now</string>
+    <string name="connect_checkout_layout_text_first_last_name">First and Last Name</string>
+    <string name="connect_checkout_layout_text_name">Name</string>
+    <string name="connect_checkout_layout_text_cc_number">Credit Card Number</string>
+    <string name="connect_checkout_layout_text_cc_expiry">Expiry Date</string>
+    <string name="connect_checkout_layout_text_cc_cvv">CVV</string>
+    <string name="connect_checkout_layout_text_dd_account_number">Account Number</string>
+    <string name="connect_checkout_layout_text_dd_bank_number">Bank Number</string>
+    <string name="connect_checkout_layout_text_footer_step0">Select your payment method</string>
+    <string name="connect_checkout_layout_text_footer_step1">Insert your payment details</string>
+    <string name="connect_checkout_layout_text_footer_step2">Review your payment details</string>
+    <string name="connect_checkout_layout_text_footer_step3">Executing payment transaction</string>
+    <string name="connect_checkout_layout_text_selected_payment_method_direct_debit">Direct Debit</string>
+    <string name="connect_checkout_layout_text_country">Country</string>
+    <string name="connect_checkout_layout_text_header_vat">(incl. VAT)</string>
+    <string name="connect_checkout_layout_text_header_amount"></string>
+
+    <!-- hints -->
+    <string name="connect_checkout_layout_hint_first_last_name">First and Last Name</string>
+    <string name="connect_checkout_layout_hint_cc_number">Credit Card Number</string>
+    <string name="connect_checkout_layout_hint_cc_expiry_month">MM</string>
+    <string name="connect_checkout_layout_hint_cc_expiry_year">YYYY</string>
+    <string name="connect_checkout_layout_hint_cc_cvv">CVV</string>
+    <string name="connect_checkout_layout_hint_dd_account">Account Number</string>
+    <string name="connect_checkout_layout_hint_dd_bank">Bank Number</string>
+
+    <!-- dummys -->
+    <string name="connect_checkout_layout_dummy_name">John Doe</string>
+    <string name="connect_checkout_layout_dummy_cc_number">*-2323</string>
+    <string name="connect_checkout_layout_dummy_cc_expiry">12/2020</string>
+    <string name="connect_checkout_layout_dummy_cc_cvv">xxx</string>
+    <string name="connect_checkout_layout_dummy_footer_text">Dummy footer</string>
+    <string name="connect_checkout_layout_dummy_header_title">Peach</string>
+    <string name="connect_checkout_layout_dummy_header_amount">119.00 EUR</string>
+    <string name="connect_checkout_layout_dummy_header_vat">(incl. 19.00 EUR VAT)</string>
+    <string name="connect_checkout_layout_dummy_transaction_run">Executing transaction</string>
+    <string name="connect_checkout_layout_dummy_country">DE</string>
+    <string name="connect_checkout_layout_dummy_dd_account_number">x-123</string>
+    <string name="connect_checkout_layout_dummy_dd_bank_number">700 000 00</string>
+
+    <!-- payment -->
+    <string name="connect_checkout_payment_peach">Peach</string>
+    <string name="connect_checkout_payment_mastercard">Mastercard</string>
+    <string name="connect_checkout_payment_visa">VISA</string>
+    <string name="connect_checkout_payment_amex">American Express</string>
+    <string name="connect_checkout_payment_jcb">JCB</string>
+    <string name="connect_checkout_payment_diners">Diners Club</string>
+    <string name="connect_checkout_payment_direct_debit">Direct Debit</string>
+    <string name="connect_checkout_layout_text_store_account_data">Store my payment details</string>
+    <string name="connect_checkout_layout_text_stored_account_credit_card">Stored credit card</string>
+        <string name="connect_checkout_layout_text_stored_account_direct_debit_card">Stored direct debit card</string>
+        <string name="connect_checkout_layout_text_stored_account_credit_card_description">Credit card</string>
+        <string name="connect_checkout_layout_text_stored_account_direct_debit_card_description">Direct debit card</string>
+    <string name="connect_checkout_layout_text_stored_account_ending_with">ending with</string>
+    <string name="connect_checkout_layout_retry">Retry</string>
+    <string name="connect_checkout_layout_cancel">Cancel</string>
+    <string name="connect_checkout_layout_title_faild">Payment failed</string>
+    <string name="connect_checkout_layout_title_success">Payment success</string>
+</resources>

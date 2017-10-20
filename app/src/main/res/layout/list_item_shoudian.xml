@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/shoufei_table_border_color" >
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginBottom="0.5dip"
+            android:layout_marginLeft="0.5dip"
+            android:layout_marginRight="0.5dip"
+            android:layout_marginTop="0dip"
+            android:background="?attr/shoufei_table_border_color" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:background="#FFFFFF"
+                android:orientation="vertical"
+                android:paddingBottom="6px"
+                android:paddingLeft="8px"
+                android:paddingRight="8px"
+                android:paddingTop="4px"
+                android:weightSum="5" >
+
+                <!-- 姓名&&单号: -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/shoudian_nameandNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Elec Bill of Steven Jobs/33444222222"
+                        android:textSize="16dp" />
+                </LinearLayout>
+                <!-- 用户地址: -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="10" >
+
+                    <TextView
+                        android:id="@+id/shoudian_addressTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="@string/shoufeidetail_tv_yonghudizhi" />
+
+                    <TextView
+                        android:id="@+id/shoudian_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8" />
+                </LinearLayout>
+                <!-- 联系电话&&电力公司: -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="20" >
+
+                    <TextView
+                        android:id="@+id/shoudian_phoneTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="@string/shoufeidetail_tv_lianxidianhua" />
+
+                    <TextView
+                        android:id="@+id/shoudian_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="9" />
+
+                    <TextView
+                        android:id="@+id/shoudian_elecdComplanyTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="@string/shoufeidetail_tv_dianligongsi" />
+
+                    <TextView
+                        android:id="@+id/shoudian_elecdComplany"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5" />
+                </LinearLayout>
+                <!-- 电表编号: -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="10" >
+
+                    <TextView
+                        android:id="@+id/shoudian_dianbiaobianhaoTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="@string/shoufeidetail_tv_dianbiaobianhao" />
+
+                    <TextView
+                        android:id="@+id/shoudian_dianbiaobianhao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View android:layout_width="match_parent"
+                  android:layout_height="?attr/listview_divide_height"
+                  android:background="?attr/listview_divide_color"
+                    />
+
+            <Button
+                android:id="@+id/btn_shoudian22"
+                style="@style/buttonFunctionDetailStyle1Port"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0dp"
+                android:layout_weight="1"
+                android:background="?attr/button_function_noborder_background_port"
+                android:text="@string/shoudianxiangqing_btn_sd" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

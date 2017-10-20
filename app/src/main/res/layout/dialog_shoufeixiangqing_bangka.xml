@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/main_frame_color"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55px"
+        android:layout_gravity="center|center_vertical"
+        android:background="#f9f9f9"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20px"
+            android:enabled="true"
+            android:gravity="center"
+            android:text="@string/shoufeixiangqing_btn_querenbangka"
+            android:textColor="#000000"
+            android:textSize="25px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:background="#f9f9f9"
+            android:gravity="right"
+            android:layout_marginRight="0dp"
+            android:padding="0dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/btnCloseDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:clickable="true"
+                android:gravity="right"
+                android:src="@drawable/dlg_tips_close" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:text="电费月份：201501 \n 账单金额：443.50"
+            android:textColor="#000000"
+            android:textSize="25px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_d_qrka"
+            style="@style/buttonFunctionStylePort"
+            android:layout_width="200dp"
+            android:background="?attr/button_function_background_port"
+            android:text="@string/shoufeixiangqing_btn_querenshoufei" />
+    </LinearLayout>
+
+</LinearLayout>

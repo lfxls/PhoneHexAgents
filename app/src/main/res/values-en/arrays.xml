@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array 
+        name="array_daozhuangzhuangtai">
+        <item>In Transit</item>
+        <item>Received</item>
+    </string-array>
+    
+    
+    <string-array 
+        name="array_xianshimoshi">
+        <item>Common</item>
+        <item>Highlight</item>
+    </string-array>
+         
+    <string-array
+        name="array_yuyinshezhi">
+        <item>NULL</item>
+    </string-array>
+    
+    <string-array 
+        name="yuyanshezhi">
+        <item>中文</item>
+        <item>English</item>
+        <item>Français</item>
+    </string-array>
+    
+    <string-array 
+        name="suopingshijian">
+        <item>Close</item>
+        <item>10Min</item>
+        <item>30Min</item>
+        <item>4 Hours</item>
+        <item>8 Hours</item>
+    </string-array>
+    
+</resources>

@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.common.powertech"
+    android:versionCode="2130"
+    android:versionName="PHONE_2130" >
+
+    <uses-feature android:name="android.hardware.usb.host" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 震动权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- 使用照相机权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+
+    <!-- 自动聚焦权限 -->
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    
+    <!-- 蓝牙打印机 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.hardware.usb.accessory" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature android:name="android.hardware.usb.host" />
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!--  从SDCard读取数据权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    
+    <!-- 点击推送消息后台唤起 -->
+    <uses-permission android:name="android.permission.GET_TASKS"/>  
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>  
+    <uses-permission android:name="android.permission.GET_TOP_ACTIVITY_INFO"/>  
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>  
+
+
+    <application
+        android:name=".PowertechApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/applogo"
+        android:label="@string/app_name"
+        android:theme="@style/OrangeTheme" >
+        <activity
+            android:name=".activity.StartAppActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:launchMode="singleTask" 
+            android:screenOrientation="portrait" 
+            android:configChanges="orientation|screenSize|keyboardHidden">
+        </activity>
+        <activity
+            android:name=".SMSActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name=".ItemListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan">
+        </activity>
+        <activity
+            android:name=".activity.ShouDianXiangQingActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden" >
+        </activity>
+        <activity
+            android:name=".activity.ShouFeiXiangQingActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden" >
+        </activity>
+        <activity
+            android:name=".activity.NetWorkSettingActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/backstyle"
+            android:configChanges="orientation|screenSize|keyboardHidden" >
+        </activity>
+        <activity
+            android:name=".activity.DianXinDuanXinXiangQingActivity"
+            android:windowSoftInputMode="stateUnspecified"
+             android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTask" >
+        </activity>
+        
+        <activity
+            android:name=".ItemDetailActivity"
+            android:label="@string/title_item_detail"
+            android:launchMode="singleTask"
+            android:parentActivityName=".ItemListActivity" 
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.common.powertech.ItemListActivity" />
+        </activity>
+
+        <activity
+                android:name="com.zbar.lib.CaptureActivity"
+                android:screenOrientation="portrait"
+                android:configChanges="orientation|screenSize|keyboardHidden" >
+        </activity>
+
+        <receiver 
+            android:name="com.common.powertech.broadcast.BootCompletedBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service 
+            android:name="com.common.powertech.service.LiuLiangTongJiService" >
+        </service>
+        
+        <!-- 蓝牙 -->
+         <activity
+            android:name="com.gprinter.sample.MainActivity">
+        </activity>
+
+        <receiver android:name="com.gprinter.sample.DeviceBootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.gprinter.sample.PrinterConnectDialog"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light" >
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_DETACHED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_filter" />
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_DETACHED"
+                android:resource="@xml/device_filter" />
+        </activity>
+        <!-- 端口设置对话 -->
+        <activity
+            android:name="com.gprinter.sample.PortConfigurationActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/port_configuration"
+            android:theme="@android:style/Theme.Dialog" 
+            android:screenOrientation="portrait">
+        </activity>
+        <!-- 蓝牙设备 -->
+        <activity
+            android:name="com.gprinter.sample.BluetoothDeviceList"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/bluetooth_device_list"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <!-- USB设备 -->
+        <activity
+            android:name="com.gprinter.sample.UsbDeviceList"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/usb_devices_list"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity android:name="com.gprinter.sample.CustomerDiaplayActivity" 
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".activity.SignUpActivity"
+            android:screenOrientation="portrait"></activity>
+         <activity 
+            android:name="com.myDialog.notifyShow"></activity>
+         
+         <!-- 支付宝 -->
+         <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+		</activity>
+		<activity
+		            android:name="com.alipay.sdk.auth.AuthActivity"
+		            android:configChanges="orientation|keyboardHidden|navigation"
+		            android:exported="false"
+		            android:screenOrientation="behind" >
+		 </activity>
+		<activity
+		            android:name="com.common.powertech.activity.YajinChongZhiDetailActivity" 
+		            android:screenOrientation="portrait">
+		 </activity> 
+		 
+		 <activity
+		            android:name="com.myDialog.peach.PeachPayActivity"
+		            android:theme="@android:style/Theme.Dialog">
+		 </activity> 
+		 
+		 <activity
+		            android:name="com.myDialog.peach.PeachPayMainActivity"
+		            android:theme="@android:style/Theme.NoTitleBar">
+		 </activity> 
+		 
+		 <activity
+		            android:name="com.myDialog.peach.PayInfFragment1">
+		 </activity> 
+		
+		 <activity
+		            android:name="com.myDialog.peach.PayInfFragment2">
+		 </activity> 
+		 
+		<!-- 微信支付完成 -->
+		<activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"/>
+		
+			<!-- 转账-->
+		<activity
+            android:name="com.common.powertech.activity.CustTransferActivity"
+            android:exported="true"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+             android:screenOrientation="portrait"/>
+		
+			<!-- 转账入账-->
+		<activity
+            android:name="com.common.powertech.activity.YajinChongZhiToken"
+            android:exported="true"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+             android:screenOrientation="portrait"/>
+		<activity
+            android:name="com.common.powertech.activity.BuyTokenActivity"
+            android:exported="true"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+             android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.common.powertech.activity.RefundTokenActivity"
+            android:exported="true"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.common.powertech.activity.RefundTokenSuccessActivity"
+            android:exported="true"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+		
+         
+         <service 
+             android:name="com.myDialog.NotificationService">
+             <intent-filter >
+                 <action  android:name="NOTIFY_SERVICE"/>
+             </intent-filter>
+         </service>
+        
+        <service
+            android:name="com.gprinter.service.GpPrintService"
+            android:enabled="true"
+            android:exported="true"
+            android:label="GpPrintService" >
+            <intent-filter>
+                <action android:name="com.gprinter.aidl.GpPrintService" />
+            </intent-filter>
+        </service>
+        <service android:name="com.gprinter.service.AllService" >
+        </service>
+        
+         <receiver 
+            android:name="com.myDialog.NotificationClickReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+
+    </application>
+
+</manifest>

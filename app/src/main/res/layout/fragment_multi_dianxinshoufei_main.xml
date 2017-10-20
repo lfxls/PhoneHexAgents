@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/main_frame_color"
+    android:orientation="vertical" >
+
+    
+        
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:orientation="horizontal">
+
+        <AutoCompleteTextView
+            android:id="@+id/inputCond"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/border_shape_thin"
+            android:ems="11"
+            android:hint="@string/main_please_phoneno"
+            android:inputType="number"
+            android:maxLength="16"
+            android:singleLine="true"
+            android:textSize="24sp"
+            android:textStyle="bold">
+
+            <requestFocus />
+        </AutoCompleteTextView>
+    </LinearLayout>
+
+     
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:orientation="horizontal">
+       
+       <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="@string/main_huafei_chongzhi"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+    </LinearLayout>
+     
+     
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:layout_marginTop="10px" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"  >
+            <Button
+                android:id="@+id/button1"
+                style="@style/buttonNumberStylePort"
+                android:layout_height="60dp"
+                android:layout_marginBottom="2dp"
+                android:background="?attr/button_number_background_port"
+                android:text="30" />
+            <Button
+                android:id="@+id/button2"
+                style="@style/buttonNumberStylePort"
+                android:layout_marginLeft="5dp"
+                android:layout_height="60dp"
+                android:background="?attr/button_number_background_port"
+                android:text="50" />
+            <Button
+                android:id="@+id/button3"
+                style="@style/buttonNumberStylePort"
+                android:layout_marginLeft="5dp"
+                android:layout_height="60dp"
+                android:background="?attr/button_number_background_port"
+                android:text="70" />
+            <Button
+                android:id="@+id/button4"
+                style="@style/buttonNumberStylePort"
+                android:layout_marginLeft="5dp"
+                android:layout_height="60dp"
+                android:background="?attr/button_number_background_port"
+                android:text="other" />
+            
+           <AutoCompleteTextView
+            android:id="@+id/inputCond2"
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/border_shape_thin"
+            android:inputType="number"
+            android:maxLength="6"
+            android:singleLine="true"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:visibility="gone">
+        </AutoCompleteTextView>
+
+
+        </TableRow> 
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:layout_marginTop="7dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/buttonByUser"
+            style="@style/buttonFunctionStylePort"
+            android:layout_marginRight="3dp"
+            android:textSize="20px"
+            android:background="?attr/button_function_background_port"
+            android:text="@string/dianxin_queren" />
+        
+    </LinearLayout>
+    
+         <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+       
+       <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="@string/main_liuliangduanxin_chongzhi"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+    </LinearLayout>
+    
+       <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/buttonSMS"
+            style="@style/buttonFunctionStylePort"
+            android:layout_marginRight="3dp"
+            android:textSize="20px"
+            android:background="?attr/button_function_background_port"
+            android:text="@string/main_duanxin" />
+        <Button
+            android:id="@+id/buttonDATA"
+            style="@style/buttonFunctionStylePort"
+            android:layout_marginRight="3dp"
+            android:textSize="20px"
+            android:background="?attr/button_function_background_port"
+            android:text="@string/main_liuliang" />
+    </LinearLayout>
+    
+
+</LinearLayout>

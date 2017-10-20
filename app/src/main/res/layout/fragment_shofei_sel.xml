@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/main_frame_color"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:layout_marginTop="20px"
+        android:gravity = "center">
+
+       <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:text="@string/main_please_choose"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </LinearLayout>
+    
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:orientation="horizontal"
+        android:gravity = "center"
+        android:weightSum="6">
+
+  
+       <Button
+            android:id="@+id/btn_selectelec"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:background="@drawable/electryfee"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+
+         <Button
+            android:id="@+id/btn_selectwater"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/waterfee"
+            android:layout_weight="1"
+             android:visibility="gone"/>
+
+         <Button
+            android:id="@+id/btn_selectair"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/gasfee"
+            android:layout_weight="1" 
+            android:visibility="gone" />
+
+         <Button
+           android:id="@+id/btn_selectcomm"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="3dp"
+            android:cropToPadding="true"
+            android:background="@drawable/phonefee"
+            android:layout_weight="1" 
+            android:visibility="gone" />
+         
+         <Button
+           android:id="@+id/btn_selecttoken"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="3dp"
+            android:cropToPadding="true"
+            android:background="@drawable/payfee"
+            android:layout_weight="1" 
+            android:visibility="visible" />
+
+           <Button
+           android:id="@+id/btn_selectrefund"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="10dp"
+            android:cropToPadding="true"
+            android:background="@drawable/refunds_fee"
+            android:layout_weight="1" 
+            android:visibility="visible" />
+
+     </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:gravity = "center" >
+         
+        <Spinner
+            android:id="@+id/spinner_choosecompany"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="?attr/spinermenubackground_style"/>
+        
+        <Button
+            android:id="@+id/buttonByMain"
+            style="@style/buttonFunctionStylePort"
+            android:layout_marginTop="20px"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="20px"
+            android:background="?attr/button_function_background_port"
+            android:text="@string/dialog_comfirm" />
+    </LinearLayout>
+
+</LinearLayout>

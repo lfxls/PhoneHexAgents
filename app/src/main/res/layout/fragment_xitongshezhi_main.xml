@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/main_frame_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="1px" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+                           
+            <TextView
+                style="@style/tvTitleStyle"
+                android:text="@string/main_xitongshezhi_textview_xianshimoshi_port" 
+                android:textSize="15sp"/>
+
+            <Spinner
+                android:id="@+id/spinner_xianshimoshi"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="5px"
+                android:background="?attr/spinerbackground_style"
+                android:entries="@array/array_xianshimoshi" />
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">                         
+
+            <TextView
+                style="@style/tvTitleStyle"
+                android:layout_marginLeft="30px"
+                android:text="@string/main_xitongshezhi_textview_yuyinshezhi_port"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/spinner_yuyinshezhi"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="?attr/spinerbackground_style"
+                android:entries="@array/array_yuyinshezhi"/>
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp" >
+            
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">                          
+
+            <TextView
+                style="@style/tvTitleStyle"
+                android:text="@string/main_xitongshezhi_textview_yuyanshezhi_port"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/spinner_yuyanshezhi"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="5px"
+                android:background="?attr/spinerbackground_style"
+                android:entries="@array/yuyanshezhi"/>           
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">                           
+
+            <TextView
+                style="@style/tvTitleStyle"
+                android:layout_marginLeft="30px"
+                android:text="@string/main_xitongshezhi_textview_suopingshijian_port"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/spinner_suopingshijian"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="?attr/spinerbackground_style"
+                android:entries="@array/suopingshijian"/>
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="15px"
+        android:layout_marginTop="7dp"
+        android:orientation="vertical" 
+        android:visibility="gone">
+
+        <TextView
+            style="@style/tvTitleStyle"
+            android:text="@string/main_xitongshezhi_textview_yongliangtongji_port"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_marginLeft="10px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/main_border_style" >
+
+            <TextView
+                android:id="@+id/tv_wlan_data"
+                style="@style/tvTitleStyle"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="7dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_marginLeft="20px"
+            style="@style/tvTitleStyle"
+            android:text="@string/main_xitongshezhi_textview_wlan"
+            android:textSize="15sp" 
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btn_wlansetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:background="?attr/button_function_background"
+            android:text="@string/main_xitongshezhi_textview_wlansetting"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:layout_marginRight="15px" >
+
+            <TextView
+                android:id="@+id/tv_app_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20px"
+                android:background="@drawable/background_edittext_rope"
+                android:textColor="#808080"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+    
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical" >
+
+        <TextView
+	        android:layout_height ="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:textColor="#D6D6D6"
+	        android:textSize="12dp"
+            android:layout_gravity="center"
+            android:text="Copyright©2016"/>
+        
+         <TextView
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#D6D6D6"
+	        android:textSize="12dp"
+            android:layout_gravity="center"
+            android:text="杭州埃度软件有限公司"/>
+    </LinearLayout>
+
+</LinearLayout>

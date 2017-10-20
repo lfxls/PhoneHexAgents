@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/main_frame_color"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:orientation="horizontal"
+        android:weightSum="6"
+        android:layout_weight="0">
+
+         <AutoCompleteTextView 
+            android:id="@+id/inputCond"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/border_shape_thin"
+            android:ems="10"
+            android:maxLength="19"
+            android:hint="@string/main_chongzheng_edittext_input_hints"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_weight="5">
+            <requestFocus />
+        </AutoCompleteTextView >
+
+        <ImageButton
+                android:id="@+id/btn_scan"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/scanbtn"
+                android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4.5">
+        <include
+            layout="@layout/mysoft_input"
+            ></include>
+    </LinearLayout>
+
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:layout_marginTop="7dp"
+        android:orientation="horizontal"
+        android:layout_weight="1.5" >
+
+        <Button
+            android:id="@+id/buttonChongzhengQuery"
+            style="@style/buttonFunctionStylePort"
+            android:background="?attr/button_function_background_port"
+            android:text="@string/main_chongzheng_button_chaxun" />
+
+    </LinearLayout>
+
+   
+</LinearLayout>

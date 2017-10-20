@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/main_frame_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingBottom="5dp" >
+
+           <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="300dp"
+            android:background="@color/white"
+            >
+              <com.common.powertech.widget.PullUpListView
+                android:id="@+id/shoufeiDetailList"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scrollbars="none"
+                android:paddingBottom="5dp" >
+            </com.common.powertech.widget.PullUpListView>
+        </LinearLayout>
+        
+       <!--  <com.common.powertech.widget.PullRefreshLayout
+            android:id="@+id/pull_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:scrollbars="vertical" >
+
+            <include
+                android:id="@+id/action_view"
+                layout="@layout/refresh_layout" />
+
+            <include
+                android:id="@+id/tool_view"
+                layout="@layout/tool_layout" />
+
+            <com.common.powertech.widget.PullUpListView
+                android:id="@+id/shoufeiDetailList"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:paddingBottom="5dp" >
+            </com.common.powertech.widget.PullUpListView>
+        </com.common.powertech.widget.PullRefreshLayout> -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_zdhbsf"
+                style="@style/buttonFunctionStylePort"
+                android:background="?attr/button_function_background_port"
+                android:text="@string/shoudianxiangqing_btn_zdhbsf"
+                android:textSize="12dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

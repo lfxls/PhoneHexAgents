@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="8.4"
+    >
+
+
+    <TextView
+        style="?attr/main_shoufeimingxi_listtv_style"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv1"
+        android:layout_weight="1.8"
+        android:gravity="center"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        />
+
+    <TextView
+        style="?attr/main_shoufeimingxi_listtv_style"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv2"
+        android:layout_weight="1.55"
+        android:gravity="center"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        />
+
+    <TextView
+        style="?attr/main_shoufeimingxi_listtv_style"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv3"
+        android:gravity="center"
+        android:layout_weight="1.7"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        />
+
+    <TextView
+        style="?attr/main_shoufeimingxi_listtv_style"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv4"
+        android:gravity="center"
+        android:layout_weight="1.25"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        />
+
+    <TextView
+        style="?attr/main_shoufeimingxi_listtv_style"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv5"
+        android:gravity="center"
+        android:layout_weight="1.2"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        />
+
+    <TextView
+        style="?attr/main_shoufeimingxi_listtv_style"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv6"
+        android:gravity="center"
+        android:layout_weight="0.9"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        />
+
+</LinearLayout>

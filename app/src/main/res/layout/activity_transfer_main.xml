@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+   <include 
+       layout="@layout/public_transfer"
+       android:layout_width="match_parent"
+       android:layout_height="51dp"/>
+    
+   <ScrollView 
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       >
+       <LinearLayout 
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           >
+           
+            <LinearLayout 
+                android:id="@+id/input_cust_lin"
+		        android:layout_width="match_parent"
+		       android:layout_height="match_parent"
+		       android:orientation="vertical"
+		        android:visibility="visible"
+		          >
+		             <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_horizontal"
+		        android:layout_marginTop="50dp"
+		        android:textSize="15dp"
+		        android:text="@string/tran_text_cust"/>
+		    
+		    <EditText 
+		        android:id="@+id/account"
+		        android:layout_width="250dp"
+		        android:layout_height="50dp"
+		       	android:layout_gravity="center_horizontal"
+		       	android:layout_marginTop="20dp"
+		       	android:background="@drawable/background_edittext_rope"
+		        />
+		    
+		    <Button 
+		        android:id="@+id/next"
+		        android:layout_width="150dp"
+		        android:layout_height="50dp"
+		        android:layout_gravity="center_horizontal"
+		        android:layout_marginTop="80dp"
+		        style="@style/buttonCheckStyle"
+		        android:background="?attr/button_function_background_port"
+		        android:text="@string/tran_btn_next"/>
+		       
+		           
+		       </LinearLayout>
+		       
+            <LinearLayout 
+                android:id="@+id/inf_custamt_lin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+                <LinearLayout 
+                    android:id="@+id/inf_cust_lin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    
+                    >
+                    <TableLayout 
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <TableRow 
+                             android:layout_width="wrap_content"
+                            android:layout_height="50dp">
+                             <TextView 
+                                android:layout_width="100dp"
+                                android:layout_height="50dp"
+                                android:gravity="center_vertical|left"
+                                android:layout_marginLeft="10dp"
+                                android:textSize="15dp"
+                                android:text="@string/tran_text_name"/>
+                            
+                            <TextView 
+                                android:id="@+id/custname"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:gravity="center_vertical|right"
+                                android:layout_marginLeft="10dp"
+                                android:textSize="15dp"
+                                android:text=""/>
+                            
+                        </TableRow>
+                        <TableRow 
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp">
+                            <TextView 
+                                android:layout_width="100dp"
+                                android:layout_height="50dp"
+                                android:gravity="center_vertical|left"
+                                android:layout_marginLeft="10dp"
+                                android:textSize="15dp"
+                                android:text="@string/tran_text_address"/>
+                            
+                            <TextView 
+                                android:id="@+id/custaddress"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:gravity="center_vertical|right"
+                                android:layout_marginLeft="10dp"
+                                android:textSize="15dp"
+                                android:text="地球"/>
+                            
+                        </TableRow>
+                    </TableLayout>
+                    
+                    <TextView 
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:background="#E0E0E0"
+                        android:textSize="18dp"
+                        android:textColor="#9D9D9D"
+                        android:text="@string/tran_text_tip"
+                        />
+                    
+                </LinearLayout>
+                
+                 <LinearLayout 
+                    android:id="@+id/inf_amt_lin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    >
+                      <LinearLayout 
+                         android:layout_width="match_parent"
+                         android:layout_height="35dp"
+                          android:gravity="center_horizontal">
+                     <EditText 
+                         android:id="@+id/amt"
+                         android:layout_width="200dp"
+                         android:layout_height="35dp"
+				       	android:background="@drawable/background_edittext_rope"
+				       	android:inputType="number"
+				       	android:maxLength="8"
+				       	android:hint="@string/tran_hint_amt"
+                         />
+                     </LinearLayout>
+                     
+                       <LinearLayout 
+                           android:id="@+id/passwd_lin"
+                         android:layout_width="match_parent"
+                         android:layout_height="35dp"
+                         android:layout_marginTop="15dp"
+                         android:visibility="gone"
+                          android:gravity="center_horizontal">
+                     
+                     <EditText 
+                         android:id="@+id/passwd"
+                         android:layout_width="200dp"
+                         android:layout_height="35dp"
+				       	android:background="@drawable/background_edittext_rope"
+				       	android:password="true"
+				       	android:maxLength="16"
+				       	android:hint="@string/tran_hint_passwd"
+                         />
+                     </LinearLayout>
+                     
+                      <LinearLayout 
+                         android:layout_width="match_parent"
+                         android:layout_height="35dp"
+                          android:layout_marginTop="15dp"
+                          android:gravity="center_horizontal">
+                     <EditText 
+                         android:id="@+id/phone"
+                         android:layout_width="200dp"
+                         android:layout_height="35dp"
+				       	android:background="@drawable/background_edittext_rope"
+				       	android:inputType="number"
+				       	android:maxLength="16"
+				       	android:hint="@string/tran_hint_phone"
+                         />
+                     </LinearLayout>
+                     
+                     <LinearLayout 
+                         android:layout_width="match_parent"
+                         android:layout_height="35dp"
+                         android:layout_marginTop="15dp"
+                          android:gravity="center_horizontal">
+                        
+                        <EditText 
+                         android:id="@+id/verify"
+                         android:layout_width="120dp"
+                         android:layout_height="35dp"
+                         android:layout_gravity="center_horizontal"
+				       	android:background="@drawable/background_edittext_rope"
+				       	android:inputType="number"
+				       	android:maxLength="4"
+				       	android:hint="@string/tran_hint_verify"
+                         />
+                        
+                        <Button 
+                         android:id="@+id/getverify"
+                         android:layout_width="80dp"
+                         android:layout_height="35dp"
+                         android:background="@drawable/background_edittext_rope"
+                         android:text="@string/tran_btn_verify"/>
+                         
+                     </LinearLayout>
+                   
+                    
+                      <TableLayout 
+	                    android:id="@+id/table_inf"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:orientation="vertical"
+			            android:layout_marginTop="20dp"
+			            android:background="#E0E0E0"
+			            android:visibility="gone"
+			            >
+		            <TableRow 
+		                android:layout_width="match_parent"
+		                android:layout_height="40dp"
+		                android:layout_marginLeft="20dp">
+		                <TextView 
+		                    android:layout_width="100dp"
+		                    android:textSize="15dp"
+		                    android:gravity="center_vertical|left"
+		                    android:text="@string/tran_hint_amt"/>
+		                
+		                 <TextView 
+		                     android:id="@+id/transfer_amt"
+		                    android:layout_width="200dp"
+		                    android:layout_marginLeft="10dp"
+		                    android:textSize="15dp"/>
+		                
+		            </TableRow>
+		            
+		            <TableRow 
+		                android:layout_width="match_parent"
+		                android:layout_height="40dp"
+		                android:layout_marginLeft="20dp"
+		                android:layout_marginTop="15dp">
+		                <TextView 
+		                    android:layout_width="100dp"
+		                    android:textSize="15dp"
+		                    android:gravity="center_vertical|left"
+		                    android:text="@string/tran_hint_fee"/>
+		                
+		                 <TextView 
+		                    android:id="@+id/fee"
+		                    android:layout_width="200dp"
+		                    android:layout_marginLeft="10dp"
+		                    android:textSize="15dp"/>
+		                
+		            </TableRow>
+		            
+		             <!-- 出账金额 -->
+		            <TableRow 
+		                android:layout_width="match_parent"
+		                android:layout_height="40dp"
+		                android:layout_marginLeft="20dp"
+		                android:layout_marginTop="15dp">
+		                <TextView 
+		                    android:layout_width="100dp"
+		                    android:textSize="15dp"
+		                    android:gravity="center_vertical|left"
+		                    android:text="@string/tran_out_amt"/>
+		                
+		                 <TextView 
+		                    android:id="@+id/out_amt"
+		                    android:layout_width="200dp"
+		                    android:layout_marginLeft="10dp"
+		                    android:textSize="15dp"/>
+		                
+		            </TableRow>
+		            
+		        </TableLayout>
+                   <Button 
+			        android:id="@+id/complete"
+			        android:layout_width="250dp"
+			        android:layout_height="40dp"
+			        android:layout_marginTop="20dp"
+			        android:layout_gravity="center_horizontal"
+			        style="@style/buttonCheckStyle"
+			        android:background="?attr/button_function_background_port"
+			        android:text="@string/tran_btn_complete"/>  
+                    
+                </LinearLayout>
+                
+            </LinearLayout>
+           
+           
+       </LinearLayout>
+   </ScrollView>
+   
+
+</LinearLayout>

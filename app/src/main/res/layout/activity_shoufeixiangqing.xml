@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="center|center_vertical"
+        android:background="?attr/main_title_color"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:enabled="true"
+            android:gravity="center"
+            android:text="@string/shoufeixiangqing_tv"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="0dp"
+            android:background="?attr/main_title_color"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/btnCloseActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:clickable="true"
+                android:gravity="right"
+                android:onClick="closeActivity"
+                android:src="?attr/dialogclose_background" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="left"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/shoufeixiangqing_nameandnumber"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="5dp"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <!-- 用户地址 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/shoufeixiangqing_addressTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shoufeidetail_tv_yonghudizhi"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/shoufeixiangqing_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp" />
+                </LinearLayout>
+                <!-- 联系电话&&电力公司 -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/shoufeixiangqing_phoneTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shoufeidetail_tv_lianxidianhua"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/shoufeixiangqing_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/shoufeixiangqing_elecdComplanyTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shoufeidetail_tv_dianligongsi"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/shoufeixiangqing_elecdComplany"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp" />
+                </LinearLayout>
+                <!-- 电费月份&&账单金额 -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/shoufeixiangqing_zhangdantiaoshuTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shoufeidetail_tv_zhangdantiaoshu"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/shoufeixiangqing_zhangdantiaoshu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/shoufeixiangqing_shoudianjineTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shoufeidetail_tv_zhangdanjine"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/shoufeixiangqing_shoudianjine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/lightblue"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <!-- 服务费&&应付金额 -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/shoufeixiangqing_fuwufeiTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shoufeidetail_tv_fuwufei"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/shoufeixiangqing_fuwufei"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <!-- 其中电费&&其中违约金 -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/shoufeixiangqing_qizhongdianfeiTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shoufeidetail_tv_qizhongdianfei"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/shoufeixiangqing_qizhongdianfei"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/shoufeixiangqing_qizhongweiyuejinTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shoufeidetail_tv_qizhongweiyuejin"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/shoufeixiangqing_qizhongweiyuejin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp" />
+                </LinearLayout>
+                 <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/shoufeixiangqing_yingfujineTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shoufeidetail_tv_yingfujine"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/shoufeixiangqing_yingfujine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp" />
+                </LinearLayout>
+                <!-- 支付密码 -->
+
+                <LinearLayout
+                    android:id="@+id/zhifumima_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/zhifumima_TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/main_zhifumima"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/password_ET"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:inputType="textPassword"
+                        android:paddingLeft="10dp"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@drawable/background_shape_welcome"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/shoufeixiangqing_gongjishoufei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/shoufeixiangqing_tv_gongjishoufei"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#000000" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_zcdy"
+                    style="@style/buttonFunctionStylePort"
+                    android:layout_width="120dp"
+                    android:background="?attr/button_function_background_port"
+                    android:text="@string/shoufeixiangqing_btn_zaicidayin"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btn_bangka"
+                    style="@style/buttonFunctionStylePort"
+                    android:layout_width="120dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="?attr/button_function_background_port"
+                    android:text="@string/shoufeixiangqing_btn_bangka"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btn_qrsf"
+                    style="@style/buttonFunctionStylePort"
+                    android:layout_width="200dp"
+                    android:background="?attr/button_function_background_port"
+                    android:text="@string/shoufeixiangqing_btn_querenshoufei" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

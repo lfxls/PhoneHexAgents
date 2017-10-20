@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array 
+        name="array_daozhuangzhuangtai">
+        <item>在途</item>
+        <item>到账</item>
+    </string-array>
+    
+    
+    <string-array 
+        name="array_xianshimoshi">
+        <item>普通模式</item>
+        <item>高亮模式</item>
+    </string-array>
+         
+    <string-array
+        name="array_yuyinshezhi">
+        <item>无</item>
+    </string-array>
+    
+    <string-array 
+        name="yuyanshezhi">
+        <item>中文</item>
+        <item>English</item>
+        <item>Français</item>
+    </string-array>
+    
+    <string-array 
+        name="suopingshijian">
+        <item>关闭</item>
+        <item>10分钟</item>
+        <item>30分钟</item>
+        <item>4小时</item>
+        <item>8小时</item>
+    </string-array>
+    
+</resources>

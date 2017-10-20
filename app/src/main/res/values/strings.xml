@@ -1,0 +1,862 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">海兴电力</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="title_activity_login">LoginActivity</string>
+    
+    <!-- 注册 -->
+    <string name="signup_title">注册Hexpay代理商帐号</string>
+    <string name="signup_base">基本信息</string>
+    <string name="signup_base_name">代理商名称:</string>
+    <string name="signup_base_type">代理商类型:</string>
+    <string name="signup_base_around">经营范围:</string>
+    <string name="signup_base_last">开通余额提醒:</string>
+    <string name="signup_base_lawman">法人代表:</string>
+    <string name="signup_base_channel">购电渠道:</string>
+    <string name="signup_base_channel1">互联网</string>
+    <string name="signup_base_channel2">POS机</string>
+    <string name="signup_base_channel3">终端</string>
+    <string name="signup_base_channel4">短信</string>
+    <string name="signup_base_idtype">证件类型:</string>
+    <string name="signup_base_id">证件号码:</string>
+    <string name="signup_base_time">证件有效期:</string>
+    <string name="signup_base_idfront">证件正面:</string>
+    <string name="signup_base_idback">证件反面:</string>
+    <string name="signup_base_paytype">购电方式:</string>
+    <string name="signup_base_nopass">无支付密码购电</string>
+    <string name="signup_base_withpass">凭支付密码购电</string>
+    <string name="signup_base_paypass">支付密码:</string>
+    <string name="signup_base_confirmpaypass">确认密码:</string>
+    <string name="signup_base_tax">税务证号:</string>
+    <string name="signup_base_serve">服务电话:</string>
+    <string name="signup_base_contact">代理商联系信息:</string>
+    <string name="signup_base_address">办公地址:</string>
+    <string name="signup_base_contactmen">联系人:</string>
+    <string name="signup_base_tel">手机:</string>
+    <string name="signup_base_mail">联系人邮箱:</string>
+    <string name="signup_base_mailnum">邮政编码:</string>
+    <string name="signup_base_login">登录信息:</string>
+    <string name="signup_base_loginid">登录名:</string>
+    <string name="signup_base_loginpass">密码:</string>
+    <string name="signup_base_confirmpass">确认密码：</string>
+    <string name="signup_base_save">提交</string>
+    <string name="signup_base_close">返回</string>
+    <string name="AGENT_TYPE_ITEM1">企业</string>
+    <string name="AGENT_TYPE_ITEM2">个人</string>
+    <string name="CRET_TYPE_ITEM1">居民身份证</string>
+    <string name="CRET_TYPE_ITEM2">护照</string>
+    <string name="CRET_TYPE_ITEM3">军官证</string>
+    <string name="CRET_TYPE_ITEM4">港澳身份证</string>
+    <string name="CRET_TYPE_ITEM5">台湾居民身份证</string>
+    <string name="CRET_TYPE_ITEM6">临时身份证</string>
+    <string name="CRET_TYPE_ITEM7">警察证</string>
+    <string name="CRET_TYPE_ITEM8">其他</string>
+    
+    <string name="zn_error_msg">不可为空，且只能为中文或者数字和英文！</string>
+    <string name="tax_error_msg">不可为空，且只能为数字、英文、下划线！</string>
+    <string name="msg_error_userid">操作账户名只能6-16位的数字或字母!</string>
+    <string name="msg_error_pass">密码需由6-16位英文字母，数字，或特殊字符中任意两种组合的密码！</string>
+    <string name="msg_error_confirmpass">确认密码输入不正确!</string>
+    <string name="msg_error_tel">请输入有效的手机号码</string>
+    <string name="msg_error_mail">请输入有效的邮箱</string>
+    <string name="msg_error_mailnum">邮编只能为数字</string>
+    <string name="msg_error_timeblank">证件有效期不可为空</string>
+    <string name="msg_error_timerror">有效期不能小于当前日期!</string>
+    <string name="sign_loading">正在提交...</string>
+    <string name="sign_failed">注册失败</string>
+    <string name="sign_success">申请成功</string>
+    <string name="sign_pic">添加图片</string>
+    <string name="sign_pic_click">点击选择图片</string>
+    <string name="sign_pic_photo">相机拍摄</string>
+    <string name="sign_pic_picture">本地图片</string>
+    <string name="sign_pic_wp">您选择的不是有效的图片</string>
+    <string name="push_msg_title">通知</string>
+    
+
+    <!-- 登录 -->
+    <string name="login_tv_button">登录</string>
+    <string name="login_tv_signupnow">注册</string>
+    <string name="login_tv_jizhuyonghuming">记住用户名</string>
+    <string name="login_tv_duanxinmoshi">短信模式</string>
+    <string name="login_username_not_null">用户名不能为空</string>
+    <string name="login_password_not_null">密码不能为空</string>
+    
+    <string name="surecash_account_not_null">surecash账户不能为空</string>
+    <string name="surecash_account_jiaoyan">surecash账户必须由12位数字组成</string>
+    <string name="surecash_telenum_not_null">手机号码不能为空</string>
+    <string name="surecash_telenum_jiaoyan">手机号码必须由11位数字组成，并且头两位数字是01</string>
+    <string name="SureCash_pay">请进行surecash支付</string>   
+    <string name="SureCash_request_fail">请求surecash接口失败，请稍后重试！</string>  
+    
+    <string name="login_username_error">用户名输入错误</string>
+    <string name="login_password_error">密码输入错误</string>
+    <string name="login_progressdialog_title">请稍等</string>
+    <string name="login_progressdialog_message">正在登录...</string>
+    <string name="login_message_success">登录成功</string>
+    <string name="login_message_supply_server_error">请求服务器出错</string>
+    <string name="login_message_server_response_timeout">服务器响应超时</string>
+    <string name="login_message_unknow_error">未知错误</string>
+    <string name="login_username">用户名</string>
+    <string name="login_password">密码</string>
+    <string name="login_fail_lock">该账户已被锁定，请15分钟后再尝试</string>
+    <string name="login_fail_times">密码错误，剩余可登录次数:</string>
+    <string name="login_fail_time_bad">校时失败，请重新登录</string>
+
+    
+    <!-- 资源选择页面 -->
+    <string name="main_please_choose">产品列表</string>
+    <string name="main_please_phoneno">请输入手机号</string>
+    <string name="main_huafei_chongzhi">话费充值</string>
+    <string name="main_liuliangduanxin_chongzhi">短信/流量包充值</string>
+    <string name="main_liuliang">流量包</string>
+    <string name="main_duanxin">短信</string>
+    <string name="main_please_chooseelec">请选择电力公司</string>
+	<string name="str_dianxingongsi">电信公司：</string>
+	<string name="str_phoneno">充值号码:</string>
+	<string name="dianxin_querenchongzhi">确认充值</string>
+	<string name="dianxin_zhifujine">支付金额</string>
+	<string name="dianxin_chongzhijine">充值金额</string>
+	<string name="dianxin_fuwufei">服务费</string>
+	<string name="dianxin_shangpingxx">商品信息</string>
+	<string name="dianxin_success">充值成功</string>
+	<string name="dianxin_failed">充值失败</string>
+	<string name="dianxin_queren">确认</string>
+	<string name="dianxinxiangqing_error1">请选择金额</string>
+	<string name="dianxinxiangqing_error2">请输入金额</string>
+	<string name="dianxin_duanxinchongzhi">短信充值</string>
+	<string name="dianxin_liuliangchongzhi">流量充值</string>
+	<string name="dianxin_please_chooseProduct">请选择套餐！</string>
+	
+	
+    <!-- 主框架标题栏 -->
+    <string name="main_title_hexing">海兴电力支付代理商系统</string>
+    <string name="main_title_xitongshezhi">系统设置</string>
+    <string name="main_title_zhuxiao">注销</string>
+    <string name="dlg_tuichudenglu_title">退出登录</string>
+    <string name="dlg_tuichudenglu_btn_zjtc">直接退出</string>
+    <string name="dlg_tuichudenglu_btn_scjl">生成记录</string>
+    <string name="dlg_tuichudenglu_tv_tcts">退出前是否生成日结记录？</string>
+    <string name="btn_keyback_title">是否确定退出？</string>
+    <string name="btn_keyback_yes">确定</string>
+    <string name="btn_keyback_no">取消</string>
+
+    <!-- 主框架欢迎栏 -->
+    <string name="main_welcome_huangyingnin">欢迎您</string>
+    <string name="main_welcome_jingrishoudian">今日售电：</string>
+    <string name="main_welcome_baozhengjinyue">押金余额：</string>
+    <string name="main_welcome_jingrishoudian_unit">笔</string>
+
+    <!-- 收费&&售电主页面界面 -->
+    <string name="shoufeidetail_tv_yonghudizhi">用户地址：</string>
+    <string name="shoufeidetail_tv_lianxidianhua">联系电话：</string>
+    <string name="shoufeidetail_tv_dianligongsi">电力公司：</string>
+    <string name="shoufeidetail_tv_dianfeiyuefen">电费月份：</string>
+    <string name="shoufeidetail_tv_zhangdantiaoshu">账单条数：</string>
+    <string name="shoufeidetail_tv_shoudianjine">售电金额：</string>
+    <string name="shoufeidetail_tv_zhangdanjine">账单金额：</string>
+    <string name="shoufeidetail_tv_dianbiaobianhao">电表编号：</string>
+    <string name="shoufeidetail_tv_fuwufei">服务费：</string>
+    <string name="shoufeidetail_tv_yingfujine">应付金额：</string>
+    <string name="shoufeidetail_tv_qizhongdianfei">其中电费：</string>
+    <string name="shoufeidetail_tv_qizhongweiyuejin">其中违约金：</string>
+    <string name="shoufeidetail_tv_zhengzaijiazai">正在加载下一页...</string>
+    <string name="shoufeidetail_phone_error">号码格式错误，请重新输入</string>
+    <string name="shoufei_spinner_sel">请选择运营商</string>
+    
+        <!-- 购买TOKEN -->
+    <string name="buytoken_input_hint">请输入手机号</string>
+    
+    <!-- 主框架收费，凭证补打，冲正申请界面 -->
+    <string name="main_edittext_input_hints">请输入户号或表号</string>
+    <string name="main_button_shoufei_qingkong">清空</string>
+    <string name="main_button_shoufei_huitui">回退</string>
+    <string name="main_button_anyonghu">按用户查询</string>
+    <string name="main_button_andianbiao">按表号查询</string>
+    <string name="main_chongzheng_edittext_input_hints">请输入户号</string>
+    <string name="main_chongzheng_button_chaxun">查询(回车)</string>
+    <string name="main_edittext_input_hints1">请输入户号</string>
+    <string name="main_button_readcard">读卡</string>
+
+    <!-- 列表下拉刷新 -->
+    <string name="note_pull_down">下拉可以刷新&#8230;</string>
+    <string name="note_pull_refresh">松开即可刷新&#8230;</string>
+    <string name="note_pull_loading">加载中&#8230;</string>
+    <string name="note_update_at">更新于：%1$s</string>
+    <string name="note_not_update">尚未更新</string>
+
+    <!-- 收费详情 -->
+    <string name="shoufeixiangqing_tv">收费详情</string>
+    <string name="shoufeixiangqing_tv_gongjishoufei">共计收费：</string>
+    <string name="shoufeixiangqing_btn_querenshoufei">确认收费</string>
+    <string name="shoufeixiangqing_tv_querengoudian">确认购电</string>
+    <string name="shoufeixiangqing_tv_surecashbiaoti">SureCash账号信息</string>
+    
+    <string name="shoufeixiangqing_tv_zhifuzonge">支付总额：</string>
+    <string name="shoufeixiangqing_tv_surecashzhanghu">SureCash账户</string>
+    <string name="shoufeixiangqing_tv_surecashshoujihaoma">手机号码</string>
+    
+   
+    <string name="shoufeixiangqing_tv_goudianliang">购电量：</string>
+    <string name="shoufeixiangqing_tv_goudianjine">购电金额：</string>
+    <string name="shoufeixiangqing_tv_shouxufei">手续费：</string>
+    <string name="shoufeixiangqing_btn_querengoudian">确认购电</string>
+    <string name="shoufeixiangqing_btn_surecashqueren">确定(回车)</string>
+    <string name="shoufeixiangqing_btn_surecashcheckqueren">确定</string>
+    
+    <string name="shoufeixiangqing_btn_zaicidayin">再次打印</string>
+    <string name="shoufeixiangqing_btn_bangka">绑卡</string>
+    <string name="dlg_goudianchenggong_token">Token</string>
+    <string name="dlg_goudianchenggong_title">购电成功</string>
+    <string name="dlg_goudianchenggong_zcdy">再次打印/写卡</string>
+    <string name="dlg_goudianchenggong_bangka">绑定二维码</string>
+    <string name="dlg_goudianchenggong_querenbangka">确认绑卡</string>
+    <string name="shoudianxiangqing_tv_cysdje">常用售电金额</string>
+    <string name="shoudianxiangqing_tv_srje">输入金额</string>
+    <string name="shoudianxiangqing_btn_zdhbsf">账单合并收费</string>
+    <string name="shoudianxiangqing_btn_huichequeren"></string>
+    <string name="shoudianxiangqing_title">售电详情</string>
+    <string name="shoudianxiangqing_kahao">卡号</string>
+    <string name="shoudianxiangqing_btn_sf">收费</string>
+    <string name="shoudianxiangqing_btn_sd">售电</string>
+    <string name="shoudianxiangqing_tv_je">请输入金额</string>
+    <string name="shoudianxiangqing_error2">输入金额不能小于1</string>
+    <string name="shoufeixiangqing_btn_querenbangka">确认绑卡</string>
+    <string name="shoufeixiangqing_btn_citiaokabangka">磁条卡绑卡</string>
+    <string name="shoufeixiangqing_btn_tiaomabangka">二维码/条码绑卡</string>
+    <string name="shoudianxiangqing_error1">输入条件不能为空</string>
+    <string name="shoufeixiangqing_shoufeishibai">收费失败！</string>
+    <string name="shoufeixiangqing_fuwufeijisuanshibai">服务费计算失败！</string>
+    <string name="shoufeixiangqing_goudianshibai">通讯超时，请重试！</string>
+    <string name="shoufeixiangqing_wangluoyichang">网络异常！</string>
+    <string name="error">出错</string>
+    <string name="error_open_magnetic_card">无法打开磁条卡设备</string>
+    <string name="dialog_comfirm">确定</string>
+    <string name="warm_password_lockWarm">支付密码连续输入错误次数达到系统限制，支付密码被锁定，系统将在两个小时后自动解锁</string>
+    <string name="warm_password_lock">支付密码连续输入错误次数达到系统限制，支付密码已被锁定</string>
+    <string name="warm_password_inputPer">密码错误，你还剩余</string>
+    <string name="warm_password_inputLeft">次机会！</string>
+    <string name="warm_cardType_wufashibie">卡类型无法识别！</string>
+    <string name="shoudianxiangqing_tv_zffs">支付方式</string>
+    
+            <string name="shoudianxiangqing_pay_token">请输入Token</string>
+    <string name="shoudianxiangqing_pay_pin">请输入Pin码</string>
+    <string name="shoudianxiangqing_error_token">请输入Token</string>
+    <string name="shoudianxiangqing_error_pin">请输入Pin码</string>
+    <string name="shoudianxiangqing_label_tokenamt">TOKEN金额:</string>
+    <string name="shoudianxiangqing_dialog_title">未完成订单</string>
+
+
+    <!-- 售电详情 -->
+    <string name="shoudianxiangqing_bangkashibai">绑卡失败！</string>
+    <string name="shoudianxiangqing_bangkachenggong">绑卡成功！</string>
+    <string name="shoudianxiangqing_xiekachenggong">写卡成功！</string>
+    <string name="shoudianxiangqing_xiekashibai">写卡失败！</string>
+    <string name="card_type_select">请选择IC卡类型</string>
+    <string name="card_type_4428">4428</string>
+    <string name="card_type_4442">4442</string>
+    <string name="auto_readCard_success">自动读卡成功！</string>
+    <string name="auto_readCard_fail">自动读卡失败！</string>
+    <string name="warm_swipcard">请刷卡...</string>
+    <string name="warm_bandcard">请绑卡...</string>
+    <string name="shoudianxiangqing_dukachenggong">读卡成功！</string>
+    <string name="shoudianxiangqing_dukashibai">读卡失败！</string>
+    <string name="shoudianxiangqing_sendsms_title">发送短信</string>
+    <string name="shoudianxiangqing_sendsms_num">请输入手机号码</string>
+    <string name="shoudianxiangqing_sure">确定</string>
+    <string name="shoudianxiangqing_titletip">提示</string>
+
+    <!-- 凭证补打详情 -->
+    <string name="str_pingzhengbuda">凭证查询</string>
+    <string name="pinzhengbuda_btn_bd">补打</string>
+    <string name="pinzhengbuda_btn_xk">写卡</string>
+    <string name="str_jiaoyidanhao">交易单号: </string>
+    <string name="str_jiaofeijine">缴费金额: </string>
+    <string name="str_jiaoyishijian">交易时间: </string>
+    <string name="str_yewuleixing">业务类型: </string>
+    <string name="str_dianligongsi">电力公司: </string>
+    <string name="str_biaohao">表号: </string>
+    <string name="str_huhao">户号: </string>
+    <string name="str_token">Token: </string>
+
+    <!-- 主框架冲正申请明细界面 -->
+    <string name="detail_chongzhengshenqing_hints">请输入户号</string>
+    <string name="detail_chongzhengshenqing_listtv_jiaoyidanhao">交易单号</string>
+    <string name="detail_chongzhengshenqing_listtv_yewuleixing">业务类型</string>
+    <string name="detail_chongzhengshenqing_listtv_jiaofeijine">缴费金额</string>
+    <string name="detail_chongzhengshenqing_listtv_jiaoyishijian">交易时间</string>
+    <string name="detail_chongzhengshenqing_listtv_dianligongsi">电力公司</string>
+    <string name="detail_chongzhengshenqing_listtv_huhao">户号</string>
+    <string name="detail_chongzhengshenqing_listtv_zhuangtai">状态</string>
+    <string name="detail_chongzhengshenqing_listtv_caozuo">操作</string>
+    <string name="dlg_rquerenchongzheng_btn_title">确认冲正</string>
+    <string name="dlg_rquerenchongzheng_czyy">诸如此类其他原因</string>
+    <string name="dlg_rquerenchongzheng_spinner_czyy">冲正原因</string>
+    <string name="str_chongzheng">冲正</string>
+    <string name="str_yufufei">预付费</string>
+    <string name="str_houfufei">后付费</string>
+    <string name="str_dianfeicuoshou">电费错收</string>
+    <string name="str_qitayuanyin">其他原因</string>
+    <string name="str_querenchenggong">冲正申请成功!</string>
+    <string name="str_lianwangshibai">联网失败!</string>
+    <string name="str_meiyoujilu">没有记录!</string>
+    <string name="str_chognzhengchaxun">冲正查询</string>
+    <string name="str_shenhe">已提交审核</string>
+    <string name="str_yichongzheng">已冲正</string>
+    <string name="str_jujue">已拒绝</string>
+    <string name="str_inputresason">请输入冲正理由</string>
+
+    	<!-- 主框架销售订单界面 -->
+	<string name="main_xiaoshoudingdan_select_weizhifu">未支付</string>
+	<string name="main_xiaoshoudingdan_select_chenggong">成功</string>
+	<string name="main_xiaoshoudingdan_select_chulizhong">支付处理中</string>
+	<string name="main_xiaoshoudingdan_select_guanbi">关闭</string>
+	<string name="main_xiaoshoudingdan_select_disanfang">第三方支付中</string>
+	<string name="main_xiaoshoudingdan_select_weizhi">其他</string>
+	<string name="main_xiaoshoudingdan_btn_detail">详情</string>
+	<string name="main_xiaoshoudingdan_btn_close">取消订单</string>
+	<string name="main_xiaoshoudingdan_btn_turnon">继续支付</string>
+	<string name="main_xiaoshoudingdan_title_qxzcz">请选择操作</string>
+	<string name="main_xiaoshoudingdan_chaxun">查询</string>
+	<string name="main_xiaoshoudingdan_prdordno">订单编号</string>
+	<string name="main_xiaoshoudingdan_nenlname">运营商</string>
+	<string name="main_xiaoshoudingdan_meter">表号</string>
+	<string name="main_xiaoshoudingdan_state">状态</string>
+	<string name="main_xiaoshoudingdan_date">日期</string>
+	<string name="main_xiaoshoudingdan_amount">金额</string>
+    
+    <!-- 收费日结界面 -->
+    <string name="main_shoufeirijie_textview_zaituchaxun">在途查询</string>
+    <string name="main_shoufeirijie_textview_daozhangchaxun">到帐查询</string>
+    <string name="main_shoufeirijie_listtv_rijiebianhao">日结编号</string>
+    <string name="main_shoufeirijie_listtv_rijiejine">日结金额</string>
+    <string name="main_shoufeirijie_listtv_rijieriqi">日结日期</string>
+    <string name="main_shoufeirijie_listtv_daozhangzhuangtai">到账状态</string>
+    <string name="main_shoufeirijie_listtv_chulirenyuan">处理人</string>
+    <string name="main_shoufeirijie_listtv_chuliriqi">处理日期</string>
+    <string name="main_shoufeirijie_listtv_caozuo">操作</string>
+    <string name="dlg_rijiexiangqing_title">日结详情</string>
+    <string name="dlg_rijiexiangqing_btn_dayin">打印</string>
+    <string name="str_zaitu">在途</string>
+    <string name="str_daozhang">到账</string>
+    <string name="str_quxiao">取消</string>
+    <string name="str_qurendaozhang">确认到账</string>
+    <string name="str_rijiechaxun">日结查询</string>
+    <string name="str_dayin">打印</string>
+    <string name="str_dayintishi">打印提示</string>
+    <string name="str_dayinrijiedan">是否打印日结单?</string>
+    <string name="str_queding">确定</string>
+    <string name="str_quxiaorijie">取消日结</string>
+    <string name="str_quxiaojilu">是否取消日结记录?</string>
+    <string name="str_querendaozhang">是否确认到账?</string>
+    <string name="str_pingzhengdayin">凭证打印</string>
+    
+    <!-- 日结详情界面 -->
+    <string name="detail_shoufeirijie_listtv_orderno">订单号</string>
+    <string name="detail_shoufeirijie_listtv_ordertime">订单时间</string>
+    <string name="detail_shoufeirijie_listtv_orderamt">订单金额</string>
+    <string name="detail_shoufeirijie_listtv_biztype">业务类型</string>
+    <string name="detail_shoufeirijie_listtv_printafter">打印之后的记录</string>
+    <string name="detail_shoufeirijie_listtv_printall">打印所有记录</string> 
+    <string name="detail_shoufeirijie_listtv_prepaid">预付费</string>
+    <string name="detail_shoufeirijie_listtv_postpaid">后付费</string>
+    <string name="detail_shoufeirijie_listtv_reversal">冲正</string>
+    <string name="str_caozuo">操作</string>
+    <string name="str_printtof">打印日结单</string>
+    <string name="str_tofno">日结编号</string>
+    <string name="str_dayinordetail">打印日结单或查看日结明细?</string>
+    <string name="str_detail">明细</string>
+
+    <!-- 到帐确认界面 -->
+    <string name="main_daozhangqueren_textview_zaituchaxun">到账状态</string>
+    <string name="main_daozhangqueren_textview_jiekuanrenyuan">解款人员</string>
+    <string name="main_daozhangqueren_button_jiekuanrenyuan">查询</string>
+    <string name="main_daozhangqueren_listtv_rijiebianhao">日结编号</string>
+    <string name="main_daozhangqueren_listtv_rijiejine">日结金额</string>
+    <string name="main_daozhangqueren_listtv_rijierenyuan">日结人员</string>
+    <string name="main_daozhangqueren_listtv_rijieriqi">日结日期</string>
+    <string name="main_daozhangqueren_listtv_daozhangzhuangtai">到账状态</string>
+    <string name="main_daozhangqueren_listtv_chuliren">处理人</string>
+    <string name="main_daozhangqueren_listtv_chuliriqi">处理日期</string>
+    <string name="main_daozhangqueren_listtv_caozuo">操作</string>
+    <string name="str_alluser">所有</string>
+
+    <!-- 主框架收支明细界面 -->
+    <string name="main_shouzhimingxi_textview_dangyue">当月</string>
+    <string name="main_shouzhimingxi_textview_dangri">当日</string>
+    <string name="main_shouzhimingxi_textview_benzhou">本周</string>
+    <string name="main_shouzhimingxi_button_chaxun">时间范围查询</string>
+    <string name="main_shouzhimingxi_button_dayin">打印</string>    
+    <string name="main_shouzhimingxi_listtv_jiaoyidanhao">交易单号</string>
+    <string name="main_shouzhimingxi_listtv_jiaoyileixing">交易类型</string>
+    <string name="main_shouzhimingxi_listtv_jiaoyishijian">交易时间</string>
+    <string name="main_shouzhimingxi_listtv_shouru">收入</string>
+    <string name="main_shouzhimingxi_listtv_zhichu">支出</string>
+    <string name="main_shouzhimingxi_listtv_yuer">余额</string>
+    <string name="main_shouzhimingxi_qishiriqi_select">选择起始日期</string>
+    <string name="main_shouzhimingxi_zhongzhiriqi_select">选择终止日期</string>
+    <string name="main_shouzhimingxi_select_warm">终止日期不能早于起始日期！</string>
+    <string name="main_zhifumima">支付密码:</string>
+    <string name="main_shouzhimingxi_shouzhileixing_goudianxiaofei">购电消费</string>
+    <string name="main_shouzhimingxi_shouzhileixing_yajinchongzhi">押金充值</string>
+    <string name="main_shouzhimingxi_shouzhileixing_shoudianfanyong">售电返佣</string>
+    <string name="main_shouzhimingxi_shouzhileixing_baozhengjin">保证金</string>
+    <string name="main_shouzhimingxi_shouzhileixing_changhuanfuwufei">偿还服务费</string>
+    <string name="main_shouzhimingxi_shouzhileixing_chanshengfuwufei">产生服务费</string>
+    <string name="main_shouzhimingxi_shouzhileixing_xiaofeichongzheng">消费冲正</string>
+    <string name="main_shouzhimingxi_shouzhileixing_fanyongchongzheng">返佣冲正</string>
+    <string name="main_shouzhimingxi_spinner_type">请选择收支类型</string>
+    
+    <!-- 押金充值界面 -->
+    <string name="main_yajinchongzhi_input_error">充值金额不能小于最小金额</string>
+    <string name="detail_yajinchongzhi_title">选择支付方式</string>
+    <string name="detail_yajinchongzhi_alipay">支付宝支付</string>
+    <string name="detail_yajinchongzhi_wechat">微信支付</string>
+    <string name="detail_yajinchongzhi_bank">银行卡支付</string>
+    <string name="detail_yajinchongzhi_cash">充值金额</string>
+    <string name="detail_yajinchongzhi_mark">备注</string>
+    <string name="detail_yajinchongzhi_rechar">立即充值</string>
+    
+    <!-- WXPayEntryActivity -->
+	<string name="pay_result_tip">这个界面用于显示第三方app通过微信支付的结果</string>
+	<string name="pay_result_callback_msg">微信支付结果：%s</string>
+	<string name="pay_result_title" >完成</string>
+	<string name="pay_result_success">支付成功</string>
+	<string name="pay_result_error2">支付失败，订单已取消</string>
+	<string name="pay_result_error">支付失败，请重新付款</string>
+
+    <!-- 主框系统设置界面 -->
+    <string name="main_xitongshezhi_textview_xianshimoshi">显示模式</string>
+    <string name="main_xitongshezhi_textview_yuyinshezhi">语音设置</string>
+    <string name="main_xitongshezhi_textview_yuyanshezhi">语言设置</string>
+    <string name="main_xitongshezhi_textview_suopingshijian">锁屏时间</string>
+    <string name="main_xitongshezhi_textview_yongliangtongji">用量统计</string>
+    <string name="main_xitongshezhi_textview_wlan">WLAN</string>
+    <string name="main_xitongshezhi_textview_wlansetting">其他设置</string>
+    <string name="main_xitongshezhi_textview_sim1exist">SIM1:已安装</string>
+    <string name="main_xitongshezhi_textview_sim2exist">SIM2:已安装</string>
+    <string name="main_xitongshezhi_textview_sim1notexist">SIM1:未安装</string>
+    <string name="main_xitongshezhi_textview_sim2notexist">SIM2:未安装</string>
+    <string name="main_xitongshezhi_textview_current_traffic">本次消耗：</string>
+    <string name="main_xitongshezhi_textview_today_traffic">当日消耗：</string>
+    <string name="main_xitongshezhi_textview_all_traffic">截至当前累计：流量使用：</string>
+    <string name="main_xitongshezhi_textview_chinese">中文</string>
+    <string name="main_xitongshezhi_textview_english">English</string>
+    <string name="main_xitongshezhi_textview_french">Français</string>
+    <string name="main_uploadfailed">设置上传失败!</string>
+    <string name="main_xitongshezhi_textview_address">服务器地址</string>
+    <string name="main_xitongshezhi_textview_address1">主用：</string>
+    <string name="main_xitongshezhi_textview_address2">备用1：</string>
+    <string name="main_xitongshezhi_textview_address3">备用2：</string>
+
+    <!-- 注销 -->
+    <string name="logout_progressdialog_message">正在注销...</string>
+    <string name="logout_message_success">注销成功</string>
+    <string name="logout_progressdialog_message_pbilldailyapply">正在生成日结记录...</string>
+    <string name="logout_dialog_rj_tv_number">日结编号:</string>
+    <string name="logout_dialog_rj_tv_date">日结日期:</string>
+    <string name="logout_dialog_rj_tv_money">日结金额:</string>
+    <string name="logout_dialog_rj_tv_zhuangtai">到账状态:</string>
+    <string name="logout_dialog_rj_btn_print">打印</string>
+    <string name="logout_print_status_zaitu">在途</string>
+    <string name="logout_print_status_daozhang">到账</string>
+    <string name="logout_dialog_sms_rj">日结单</string>
+    <string name="logout_dialog_sms_rj_no">编号:</string>
+    <string name="logout_dialog_sms_rj_date">时间:</string>
+    <string name="logout_dialog_sms_rj_number">笔数:</string>
+    <string name="logout_dialog_sms_rj_money">金额:</string>
+
+    <!-- 公告 -->
+    <string name="notify">公告：</string>
+    <string name="notify_dialog">公告</string>
+    <string name="notify_dialog_button_close">关闭</string>
+    <string name="notify_dialog_message_none">暂无相关数据</string>
+
+    <!-- 版本更新 -->
+    <string name="update_alertdialog_message">检测到新版本,是否升级?</string>
+    <string name="update_alertdialog_positive_button">升级</string>
+    <string name="update_alertdialog_negative_button">暂不升级</string>
+    <string name="update_progressdialog_title">正在下载更新</string>
+    <string name="update_progressdialog_message">请稍等...</string>
+    <string name="update_toast_version_latest">当前版本已最新</string>
+
+    <!-- 打印 -->
+    <string name="printering">打印中</string>
+    <string name="printer_status_timeout">打印超时</string>
+    <string name="printer_status_success">打印成功</string>
+    <string name="printer_status_nopaper">打印机缺纸</string>
+    <string name="printer_status_hot">打印机过热</string>
+    <string name="printer_status_full">打印机缓存已满</string>
+    <string name="printer_status_noconnect">打印机未连接</string>
+    <string name="printer_status_other_error">其它打印错误</string>
+
+    <!-- 其他 -->
+    <string name="progress_timeout">操作超时</string>
+    <string name="progress_shoufei_title">收费</string>
+    <string name="progress_zidongduka_title">自动读卡</string>
+    <string name="progress_tishi_title">提示</string>
+    <string name="progress_insert_card">请插入IC卡...</string>
+    <string name="progress_conducting">处理中，请稍候...</string>
+    <string name="login_message_no_network_connected">无网络连接</string>
+    <string name="progress_upload">上传参数</string>
+    <string name="wifi_setting">WiFi设置</string>
+    <string name="ethernet_setting">以太网设置</string>
+    <string name="mobile_setting">移动网络设置</string>
+    <string name="networksetting_back">返回</string>
+    <string name="network_setting_login">网络设置</string>
+    <string name="network_setting_server_address">服务器地址设置</string>
+    <string name="network_setting_server_address_button_ensure">确定</string>
+    <string name="network_setting_server_address_button_cancel">取消</string>
+    <string name="network_setting_server_address_button_scan">扫码</string>
+    <string name="network_setting_server_address_message_not_null">服务器地址不能为空</string>
+    <string name="shoudianxiangqing_jineshurubuzhengque">金额格式不正确!</string>
+    <string name="writingcard">正在写卡...</string>
+    <string name="writecard_nonemessage">未有写卡数据!</string>
+    <string name="writecard_fail">写卡失败!</string>
+    <string name="writecard_changePW_fail">修改密码失败！</string>
+    <string name="writecard_repairData_fail">恢复数据失败!</string>
+    <string name="writecard_iccardpw_fail">IC卡密码错误或已写卡成功!</string>
+    <string name="writecard_verify_fail">校验失败!</string>
+    <string name="writecard_check_card">未检测到IC卡!</string>
+    <string name="dialog_check">查询</string>
+    <string name="dialog_title_accordingtotime">按时间范围查询</string>
+    <string name="begin_date">开始日期</string>
+    <string name="end_date">结束日期</string>
+    <string name="trac_data_error">磁道数据有误！</string>
+    <string name="userno_or_meterno">户号/表号:</string>
+    <string name="username">户名:</string>
+
+    <string name="scan_tips">将二维码图片对准扫描框即可自动扫描</string>
+    <string name="scan_title">二维码/条码</string>
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+    <string name="scan_fail">扫描失败！</string>
+    
+    <string name="dialog_sureout">确定退出应用？</string>
+    <string name="dialog_yes">是</string>
+	<string name="dialog_no">否</string>
+	<string name="toast_back">再按一次退出程序</string>
+	
+    <!-- 竖屏系统设置项标签 -->
+    <string name="main_xitongshezhi_textview_xianshimoshi_port">显示模式</string>
+    <string name="main_xitongshezhi_textview_yuyinshezhi_port">语音设置</string>
+    <string name="main_xitongshezhi_textview_yuyanshezhi_port">语言设置</string>
+    <string name="main_xitongshezhi_textview_suopingshijian_port">锁屏时间</string>
+    <string name="main_xitongshezhi_textview_yongliangtongji_port">用量统计</string>
+
+    <!-- 短信售电 -->
+    <string name="duanxingoudian_tv_dianbiaobianhao">电表编号：</string>
+    <string name="shoufeidetail_btn_duanxinshoudian">短信售电</string>
+    <string name="duanxingoudian_btn_sendAgain">重新发送</string>
+    <string name="duanxingoudian_tv_timeout">短信发送超时，请重新发送</string>
+    <string name="duanxingoudian_inputNo">请输入表号！</string>
+    <string name="duanxingoudian_tv_notExist">表号不存在，请确认后重新售电</string>
+    <string name="duanxingoudian_tv_shoudianchenggong">售电成功</string>
+    <string name="duanxingoudian_tv_shoudianshibai">售电失败</string>
+    <string name="duanxingoudian_tv_shoudianchaoshi">售电超时</string>
+    <string name="duanxingoudian_tv_shoudianqueren">确认售电</string>
+    <string name="duanxingoudian_tv_Token">Token：</string>
+    <string name="duanxingoudian_sent_success">短信发送成功!</string>
+    <string name="duanxingoudian_sent_fail">发送失败!</string>
+    <string name="duanxingoudian_ticket_title">收费单据</string>
+    <string name="duanxingoudian_fukuanjine">付款金额：</string>
+    
+    <!-- 390快捷键 -->
+    <string name="main_button_anyonghu_390">按用户查询</string>
+    <string name="main_exception_message">很抱歉,系统出现异常,请重新登录.</string>
+    
+    <!-- 磁条卡 -->
+    <string name="warm_swipcard_again">请再次刷卡！</string>
+    <string name="warm_swipcard_dataError">磁道数据异常，请再次刷卡！</string>
+    
+    <!-- 蓝牙打印机 -->
+     <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="bluetooth">连接打印机设置</string>
+    <string name="usb">USB</string>
+    <string name="ethernet">ethernet</string>
+    <string name="print_mode">Print mode</string>
+    <string name="tsc">Label</string>
+    <string name="esc">Receipt</string>
+    <string name="print_text">Print text</string>
+    <string name="print_image">Print bitmap</string>
+    <string name="print_1d_barcode">Print 1D barcode</string>
+    <string name="open">Open port</string>
+    <string name="close">Close port</string>
+    <string name="receive">Received data</string>
+    <string name="query">Query status</string>
+    <string name="init_port_info">Port:undefined Addr:undefined</string>
+    <string name="port">Port:</string>
+    <string name="ok">OK</string>
+    <string name="address">Name:</string>
+    <string name="port_parameters_wrong">Invalid parameters！</string>
+    <string name="port_parameters_is_not_save">Port parameters is not saved！</string>
+    <string name="gprinter001">打印机</string>
+    <string name="gprinter002">Printer 002</string>
+    <string name="gprinter003">Printer 003</string>
+    <string name="gprinter004">Printer 004</string>
+    <string name="gprinter005">Printer 005</string>
+    <string name="disconnect">disconnect</string>
+    <string name="cut">断开</string>
+    <string name="cutting">disconnecting</string>
+    <string name="connect">连接</string>
+    <string name="connected">connected</string>
+    <string name="connecting">connecting</string>
+    <string name="port_configuration">Port configuration</string>
+    <string name="bluetooth_is_not_enabled">bluetooth is not enabled</string>
+    <string name="title_paired_devices">Paired</string>
+    <string name="title_other_devices">New</string>
+    <string name="scan">Scan</string>
+    <string name="bluetooth_device_list">Bluetooth device list</string>
+    <string name="select_bluetooth_device">select bluetooth device</string>
+    <string name="none_bluetooth_device_found">none bluetooth device found</string>
+    <string name="none_paired">none paired</string>
+    <string name="refresh_bluetooth_list">refresh bluetooth list</string>
+    <string name="scaning">scaning</string>
+    <string name="usb_info">usb information</string>
+    <string name="refresh_usb_device">refresh usb devices</string>
+    <string name="ip_address">ip:</string>
+    <string name="default_ip_address">192.168.123.100</string>
+    <string name="port_number">port:</string>
+    <string name="default_port_number">9100</string>
+    <string name="bluetooth_address">bluetooth addr： </string>
+    <string name="usb_address">USB： </string>
+    <string name="usb_devices_list">USB devices list</string>
+    <string name="none_usb_device">none usb device connected</string>
+    <string name="current_version">current version</string>
+    <string name="find_new_version">Found new version</string>
+    <string name="whether_or_not_to_update">Update app？</string>
+    <string name="app_update">App update</string>
+    <string name="update">update</string>
+    <string name="not_update">ignore</string>
+    <string name="downloading">Downloading</string>
+    <string name="please_wait">please waiting</string>
+    <string name="download_complated">downloaded</string>
+    <string name="whether_or_not_setup_new_app">Setup new app?</string>
+    <string name="loading">Loading。。。</string>
+    <string name="cancel">Cancel</string>
+    <string name="copy_right_en">COPYRIGHT@2014 GPRINTER ALL RIGHTS RESERVERD</string>
+    <string name="copy_right_cn">佳博集团 版权所有</string>
+    
+    <string name="error_configuration">Please configure your serial port first.</string>
+    <string name="error_security">You do not have read/write permission to the serial
+		port.</string>
+    <string name="error_unknown">The serial port can not be opened for an unknown
+		reason.</string>
+    <string name="str_clear">Clear</string>
+    <string name="str_reset">Reset</string>
+    <string name="str_turn_on_backlight">Turn on backlight</string>
+    <string name="str_turn_off_backlight">Turn off backlight</string>
+    <string name="str_change_contrast">change contrast</string>
+    <string name="str_set_backlight_timeout">Set backlight timeout</string>
+    <string name="str_set_cursor_position">Set cursor position</string>
+    <string name="str_display_bitmap">Display bitmap</string>
+    <string name="str_input_in_current_position">Input in current position</string>
+    <string name="str_input_in_bebind_position">Input in bebind position</string>
+    <string name="str_get_backlight_status">Get backlight</string>
+    <string name="str_get_backlight_timeout">Get backlight timeout</string>
+    <string name="str_update">Update</string>
+    <string name="str_get_cursor_position">Get cursor position</string>
+    <string name="str_get_row_and_column">Get row and column</string>
+    <string name="str_have_been_turn_off_backlight">Display have been turn off backlight</string>
+    <string name="str_set_successful">set successful</string>
+    <string name="str_please_input_x_y">Please input x coordinate and y coordinate</string>
+    <string name="str_input_display_timeout">Please input turn off display timeout</string>
+    <string name="str_no_permission">No permission to do it</string>
+    <string name="str_ok">ok</string>
+    <string name="str_contrast">contrast</string>
+    <string name="str_set_contrast">Set contrast:</string>
+    <string name="str_set_brightness">Set brightness:</string>
+    <string name="str_close_port">Close port</string>
+    <string name="str_open_port">Open port</string>
+    <string name="str_port_status">Port status</string>
+    <string name="str_all_black">All black</string>
+    <string name="str_all_white">All White</string>
+    <string name="str_recovery">Recovery</string>
+    <string name="str_us_cn">chlish</string>
+    <string name="str_open_success">设备连接成功</string>
+    <string name="str_open_fail">连接失败请重试</string>
+    <string name="str_open_hasuc">设备已连接</string>
+    <string name="str_noopen">打印机未连接！</string>
+    <string name="str_note">提示</string>
+    <string name="str_goset">前往设置</string>
+    <string name="str_cancel">取消</string>
+    <string name="zhuanzhang_all">全部</string>
+    <string name="zhuanzhang_status01">未使用</string>
+     <string name="zhuanzhang_status02">已使用</string>
+      <string name="zhuanzhang_status03">已找回</string>
+      <string name="zhuanzhang_type0">未指定</string>
+       <string name="zhuanzhang_type1">指定</string> 
+     <string name="zhuanzhang_btn_add">转账</string> 
+      <string name="zhuanzhang_btn_query">查询</string> 
+      <string name="zhuanzhang_btn_findback">找回</string> 
+      <string name="zhuanzhang_btn_ReBT">使用Token充值   &gt;&gt;</string> 
+      
+      <!-- token转账 -->
+       <string name="tran_label_cust">指定</string> 
+       <string name="tran_label_user">非指定</string> 
+       <string name="tran_text_cust">代理商编号</string> 
+       <string name="tran_text_name">代理商名称</string>
+       <string name="tran_text_address">代理商地址</string>  
+       <string name="tran_text_tip">请确认代理商信息</string> 
+       <string name="tran_hint_amt">金额</string>
+       <string name="tran_hint_passwd">支付密码</string>
+       <string name="tran_hint_phone">手机号码</string>
+       <string name="tran_hint_verify">验证码</string>
+       <string name="tran_btn_complete">确认</string>
+        <string name="tran_btn_next">下一步</string>
+        <string name="tran_btn_verify">获取</string>
+                <string name="tran_btn_retry">重试</string>
+         <string name="tran_toast_error1">请输入代理商信息</string>
+        <string name="tran_toast_error2">请输入手机号</string>
+         <string name="tran_toast_error3">请输入支付密码</string>
+         <string name="tran_toast_error4">请输入金额</string>
+          <string name="tran_toast_error5">转账金额只能为整数</string>
+       <string name="tran_toast_error6">系统繁忙,请重新再试</string>
+        <string name="tran_toast_error7">请先获取验证码</string>
+         <string name="tran_toast_error8">请输入验证码</string>
+          <string name="tran_toast_error9">请注意查收验证码</string>
+           <string name="tran_toast_error10">购买成功</string>
+            <string name="tran_toast_error11">关闭</string>
+             <string name="tran_toast_error12">继续转账</string>
+              <string name="tran_print">转账</string>
+       <!-- Token入账 -->
+      <string name="tranin_text_token">TOKEN Pay</string>
+      <string name="tranin_dialog_title">转账</string>
+       <string name="tranin_dialog_hint1">转账码</string>
+       <string name="tranin_dialog_hint2">PIN码</string>
+     <string name="tranin_dialog_pbtn">确定</string>
+     <string name="tranin_dialog_nbtn">取消</string>
+     <string name="tranin_dialog_back"> &lt; 返回</string>
+      <string name="tranin_btn_qry">查询</string>
+      <string name="tranin_suc_msg">转账成功</string>
+      <string name="tranin_suc_amt">支付金额</string>
+      <string name="tran_hint_fee">服务费</string>
+      <string name="tran_out_amt">订单金额</string>
+      <string name="tran_in_amt">转账金额</string>  
+     <string name="tranin_suc_fee">服务费</string>
+     <string name="tranin_suc_commision">返佣金额</string>
+     <string name="tranin_suc_balance">押金余额</string>    
+     <string name="tranin_error1">请输入转账码</string>
+     <string name="tranin_error2">查询失败</string>
+     <string name="tranin_error3">请输入PIN</string>     
+      <string name="tranin_error4">充值失败</string>     
+     <!-- 转账记录 -->
+     <string name="trecord_condition_sta">状态</string> 
+     <string name="trecord_condition_type">类型</string>
+     <string name="trecord_title_1">手机号码</string>  
+     <string name="trecord_title_2">转账金额</string>  
+     <string name="trecord_title_3">转账对象</string>
+     <string name="trecord_title_4">转账状态</string>
+     <string name="trecord_title_5">订单时间</string>     
+     <string name="trecord_progress_title">等待...</string>  
+     <string name="trecord_btndialog_msg">是否要找回手机号 #{phone} 的转账Token？</string>    
+     <string name="tranord_error1">系统繁忙,请重新再试</string>
+      <string name="tranord_error2">Token找回失败</string>
+     <string name="tranord_find_successmsg">恭喜您，Token找回成功，请注意查收短信！</string>
+      <string name="trecord_btndialog_negative">关闭</string>  
+      
+      <!-- token退款 -->
+      <string name="refund_token_hint">请输入退款TOKEN</string>
+      <string name="refund_token_query">查询</string>
+      <string name="refund_token_error1">请输入TOKEN</string>
+      <string name="refund_token_error2">请输入PIN</string>
+    <string name="refund_token_error3">系统繁忙请重新再试</string>
+      <string name="refund_token_msg1">TOKEN金额： </string>
+      <string name="refund_token_msg2">退款金额： </string>
+      <string name="refund_token_msg3">服务费： </string>
+     <string name="refund_tips">退款后TOKEN将无法使用,是否确认退款？</string>
+      <string name="refund_pin_hint">请输入PIN码</string>
+      <string name="refund_confirm">确认退款</string>
+    <string name="refund_dialog_calcle">取消</string>
+    <string name="refund_dialog_confirm">确定</string>
+    <string name="refund_success">退款成功</string>
+
+    <string name="refund_success_recharge">充值金额:</string>
+    <string name="refund_success_discount">返佣金额:</string>
+    <string name="refund_success_balance">押金余额:</string>
+    <string name="refund_success_prdordno">退款订单号:</string>
+    <string name="refund_success_close">关闭</string>
+    <string name="refund_success_print">打印小票</string>
+
+
+    <string name="title_alert">tip</string>
+    <string name="copy_right">Copyright©2016</string>
+    <string name="copy_right_ido">杭州埃度软件有限公司</string>
+    
+        <!-- Peach支付整合 -->
+     <!-- accessibility -->
+    <string name="connect_checkout_layout_accessibility_payment_icon">payment method</string>
+    <string name="connect_checkout_layout_accessibility_list_disclosure">select payment method</string>
+    <string name="connect_checkout_layout_accessibility_cancel_checkout">cancel checkout</string>
+    <string name="connect_checkout_layout_accessibility_originating_app_icon">originating app icon</string>
+
+    <!-- content -->
+    <string name="connect_checkout_layout_text_selected_payment_method">Payment method</string>
+    <string name="connect_checkout_layout_text_review_and_confirm">Review and Confirm</string>
+    <string name="connect_checkout_layout_text_pay">Pay Now</string>
+    <string name="connect_checkout_layout_text_first_last_name">First and Last Name</string>
+    <string name="connect_checkout_layout_text_name">Name</string>
+    <string name="connect_checkout_layout_text_cc_number">Credit Card Number</string>
+    <string name="connect_checkout_layout_text_cc_expiry">Expiry Date</string>
+    <string name="connect_checkout_layout_text_cc_cvv">CVV</string>
+    <string name="connect_checkout_layout_text_dd_account_number">Account Number</string>
+    <string name="connect_checkout_layout_text_dd_bank_number">Bank Number</string>
+    <string name="connect_checkout_layout_text_footer_step0">Select your payment method</string>
+    <string name="connect_checkout_layout_text_footer_step1">Insert your payment details</string>
+    <string name="connect_checkout_layout_text_footer_step2">Review your payment details</string>
+    <string name="connect_checkout_layout_text_footer_step3">Executing payment transaction</string>
+    <string name="connect_checkout_layout_text_selected_payment_method_direct_debit">Direct Debit</string>
+    <string name="connect_checkout_layout_text_country">Country</string>
+    <string name="connect_checkout_layout_text_header_vat">(incl. VAT)</string>
+    <string name="connect_checkout_layout_text_header_amount"></string>
+
+    <!-- hints -->
+    <string name="connect_checkout_layout_hint_first_last_name">First and Last Name</string>
+    <string name="connect_checkout_layout_hint_cc_number">Credit Card Number</string>
+    <string name="connect_checkout_layout_hint_cc_expiry_month">MM</string>
+    <string name="connect_checkout_layout_hint_cc_expiry_year">YYYY</string>
+    <string name="connect_checkout_layout_hint_cc_cvv">CVV</string>
+    <string name="connect_checkout_layout_hint_dd_account">Account Number</string>
+    <string name="connect_checkout_layout_hint_dd_bank">Bank Number</string>
+
+    <!-- dummys -->
+    <string name="connect_checkout_layout_dummy_name">John Doe</string>
+    <string name="connect_checkout_layout_dummy_cc_number">*-2323</string>
+    <string name="connect_checkout_layout_dummy_cc_expiry">12/2020</string>
+    <string name="connect_checkout_layout_dummy_cc_cvv">xxx</string>
+    <string name="connect_checkout_layout_dummy_footer_text">Dummy footer</string>
+    <string name="connect_checkout_layout_dummy_header_title">Recharge</string>
+    <string name="connect_checkout_layout_dummy_header_amount">119.00 EUR</string>
+    <string name="connect_checkout_layout_dummy_header_vat">(incl. 19.00 EUR VAT)</string>
+    <string name="connect_checkout_layout_dummy_transaction_run">Executing transaction</string>
+    <string name="connect_checkout_layout_dummy_country">DE</string>
+    <string name="connect_checkout_layout_dummy_dd_account_number">x-123</string>
+    <string name="connect_checkout_layout_dummy_dd_bank_number">700 000 00</string>
+
+    <!-- payment -->
+    <string name="connect_checkout_payment_peach">Peach</string>
+    <string name="connect_checkout_payment_mastercard">Mastercard</string>
+    <string name="connect_checkout_payment_visa">VISA</string>
+    <string name="connect_checkout_payment_amex">American Express</string>
+    <string name="connect_checkout_payment_jcb">JCB</string>
+    <string name="connect_checkout_payment_diners">Diners Club</string>
+    <string name="connect_checkout_payment_direct_debit">Direct Debit</string>
+    <string name="connect_checkout_layout_text_store_account_data">Store my payment details</string>
+    <string name="connect_checkout_layout_text_stored_account_credit_card">Stored credit card</string>
+        <string name="connect_checkout_layout_text_stored_account_direct_debit_card">Stored direct debit card</string>
+        <string name="connect_checkout_layout_text_stored_account_credit_card_description">Credit card</string>
+        <string name="connect_checkout_layout_text_stored_account_direct_debit_card_description">Direct debit card</string>
+    <string name="connect_checkout_layout_text_stored_account_ending_with">ending with</string>
+    <string name="connect_checkout_payment_datecheck">The date has expired</string>
+    <string name="connect_checkout_layout_retry">继续支付</string>
+    <string name="connect_checkout_layout_cancel">退出</string>
+    <string name="connect_checkout_layout_title_faild">支付失败！</string>
+    <string name="connect_checkout_layout_title_success">支付成功！</string>
+    
+    <string name="connect_checkout_noname">Please insert First and Last Name</string>
+    <string name="connect_checkout_nocard">Please insert Credit Card Number</string>
+    <string name="connect_checkout_nocvv">Please insert cvv</string>
+    <string name="connect_checkout_woryear">The Year format is incorrect</string>
+    <string name="connect_checkout_wormonth">The Month format is incorrect</string>
+    
+</resources>
